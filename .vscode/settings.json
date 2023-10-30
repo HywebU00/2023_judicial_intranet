@@ -1,0 +1,58 @@
+{
+  "editor.maxTokenizationLineLength": 20000,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.foldingMaximumRegions": 50000,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.stickyScroll.enabled": true,
+  "files.autoSave": "onFocusChange",
+  "emmet.triggerExpansionOnTab": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.tabWidth": 2,
+  "prettier.semi": true,
+  "prettier.printWidth": 300,
+  "cSpell.autoFormatConfigFile": true,
+  "html.format.wrapLineLength": 200,
+  "css.format.spaceAroundSelectorSeparator": true,
+  "scss.format.spaceAroundSelectorSeparator": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "liveSassCompile.settings.generateMap": true,
+  "liveServer.settings.multiRootWorkspaceName": "",
+  "liveServer.settings.useWebExt": true,
+  "liveServer.settings.host": "localhost",
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.wait": 100,
+  "liveServer.settings.ChromeDebuggingAttachment": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    }
+  ],
+  "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDelete": false,
+  "workbench.startupEditor": "none",
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "window.zoomLevel": 1
+}

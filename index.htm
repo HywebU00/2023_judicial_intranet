@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta name="robots" content="noindex"><!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>單位名稱切版檔案</title>
+    <!--[if lt IE 9]>
+    <script src="version_blue/js/html5shiv.js"></script>
+    <script src="version_blue/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI -->
+    <link rel="stylesheet" href="version_blue/css/hyui.css">
+    <!-- favicon -->
+    <link href="version_blue/images/favicon.png" rel="icon" type="image/x-icon" />
+    <style>
+        .demo_wrap {
+            max-width: 1200px;
+            margin: 0em auto 1em;
+            padding: 15px 15px 3em;
+            clear: both;
+            background: #FFF
+        }
+
+        .demo_wrap h1 {
+            display: block;
+            margin: 0px auto;
+            max-width: 300px;
+            float: left;
+            margin-right: 1em
+        }
+
+        @media screen and (max-width:545px) {
+            .demo_wrap h1 {
+                max-width: 100%;
+                float: none;
+                text-align: center
+            }
+        }
+
+        .demo_wrap h1 img {
+            width: 300px
+        }
+
+
+
+        body {
+            counter-reset: num;
+            background-image: none;
+            background: rgb(24, 39, 124);
+            background: linear-gradient(90deg, rgba(24, 39, 124, 1) 0%, rgba(0, 148, 186, 1) 44%);
+        }
+
+        table {
+            margin-bottom: 1em
+        }
+
+        table caption {
+            text-align: left;
+            font-weight: bold;
+            font-size: 1.25em;
+            padding: .5em 0;
+            color: #ff5050
+        }
+
+
+
+
+        .num {
+            width: 5%
+        }
+
+        tbody tr td:first-child:before {
+            counter-increment: num;
+            display: block;
+            text-align: center;
+            content: counters(num, ".") " "
+        }
+
+        table td {
+            border: 1px solid #ddd;
+
+
+        }
+
+        table td a {
+            height: auto;
+
+            text-overflow: inherit;
+        }
+
+        tbody tr td:nth-child(2) {
+            /* width: 20% */
+        }
+
+        tbody tr td:nth-child(3),
+        tbody tr td:nth-child(4),
+        tbody tr td:nth-child(5) {
+            width: 25%
+        }
+
+        .btn_grp {
+            text-align: right;
+        }
+
+        @media screen and (max-width:545px) {
+            .btn_grp {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo_wrap">
+        <h1><img src="version_blue/images/logo.png" alt=""></h1>
+        <div class="btn_grp">
+            <a href="https://github.com/HywebU00/hyui_flex" class="btn">切版檔案請按此下載</a>
+        </div>
+        <hr>
+        <div class="table_wrapper">
+            <!-- hyUI 標準頁面 -->
+            <table>
+                <thead>
+                    <tr>
+                        <th class="num">編號</th>
+                        <th>頁面名稱</th>
+                        <th>檔案名稱(藍版）</th>
+                        <th>檔案名稱(黃版）</th>
+                        <th>檔案名稱(綠版）</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>首頁_登入前</td>
+                        <!-- 連結放到a裡面就好 -->
+                        <td><a href="version_blue/mp.htm"></a></td>
+                        <td><a href="version_gold/mp.htm"></a></td>
+                        <td><a href="version_green/mp.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>首頁_登入後</td>
+                        <!-- 連結放到a裡面就好 -->
+                        <td><a href="version_blue/mp_login.htm"></a></td>
+                        <td><a href="version_gold/mp_login.htm"></a></td>
+                        <td><a href="version_green/mp_login.htm"></a></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>np節點頁</td>
+                        <td><a href="version_blue/np.htm"></a></td>
+                        <td><a href="version_gold/np.htm"></a></td>
+                        <td><a href="version_green/np.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>lp文字列表頁</td>
+                        <td><a href="version_blue/lp.htm"></a></td>
+                        <td><a href="version_gold/lp.htm"></a></td>
+                        <td><a href="version_green/lp.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>lp表格列表頁</td>
+                        <td><a href="version_blue/lp_table.htm"></a></td>
+                        <td><a href="version_gold/lp_table.htm"></a></td>
+                        <td><a href="version_green/lp_table.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>lp附件列表頁</td>
+                        <td><a href="version_blue/lp_table_appendix.htm"></a></td>
+                        <td><a href="version_gold/lp_table_appendix.htm"></a></td>
+                        <td><a href="version_green/lp_table_appendix.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>lp相簿列表</td>
+                        <td><a href="version_blue/lp_photolist.htm"></a></td>
+                        <td><a href="version_gold/lp_photolist.htm"></a></td>
+                        <td><a href="version_green/lp_photolist.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>影音相簿列表</td>
+                        <td><a href="version_blue/lp_videolist.htm"></a></td>
+                        <td><a href="version_gold/lp_videolist.htm"></a></td>
+                        <td><a href="version_green/lp_videolist.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>cp一般內容</td>
+                        <td><a href="version_blue/cp.htm"></a></td>
+                        <td><a href="version_gold/cp.htm"></a></td>
+                        <td><a href="version_green/cp.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>cp照片內容</td>
+                        <td><a href="version_blue/cp_photo.htm"></a></td>
+                        <td><a href="version_gold/cp_photo.htm"></a></td>
+                        <td><a href="version_green/cp_photo.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>網站導覽</td>
+                        <td><a href="version_blue/sitemap.htm"></a></td>
+                        <td><a href="version_gold/sitemap.htm"></a></td>
+                        <td><a href="version_green/sitemap.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>404 網站錯誤</td>
+                        <td><a href="version_blue/404.htm"></a></td>
+                        <td><a href="version_gold/404.htm"></a></td>
+                        <td><a href="version_green/404.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>全文檢索</td>
+                        <td><a href="version_blue/lp_full_search.htm"></a></td>
+                        <td><a href="version_gold/lp_full_search.htm"></a></td>
+                        <td><a href="version_green/lp_full_search.htm"></a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <script src="version_blue/js/jquery-3.5.1.min.js"></script>
+    <script src="version_blue/vendor/jquery.easing.min.js"></script>
+    <script src="version_blue/js/hyui.js"></script>
+    <script src="version_blue/js/customize.js"></script>
+    <script>
+        $(function () {
+            $('tbody').find('a').each(function (index, el) {
+                var Link = $(this).attr('href');
+                $(this).text(Link);
+            });
+        })
+    </script>
+</body>
+
+</html>

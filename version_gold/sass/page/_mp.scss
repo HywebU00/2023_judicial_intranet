@@ -1,0 +1,381 @@
+/////////////////////////////////////////////////////////以下為demo範例///
+// 首頁區塊設定
+// more按鈕
+
+.more {
+  a {
+    display: inline-block;
+    padding: 0px 0 0px 16px;
+    color: #000;
+    transition: 0.5s;
+    position: relative;
+    &:before {
+      content: '';
+      border: 5px solid #000;
+      border-color: transparent transparent transparent #000;
+      position: absolute;
+      left: 0;
+      top: 6px;
+    }
+    &:hover {
+      background-color: $linkColor;
+      padding: 8px 36px;
+    }
+  }
+}
+// 範例：
+// .demosection {
+//   [class^='col'] {
+//     border: 2px solid #fff;
+//     background: #dedede;
+//   }
+// }
+// mpleft_block
+.leftlinkblock {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.604079131652661) 0%, rgba(255, 255, 255, 1) 44%, rgba(207, 204, 197, 1) 100%);
+  border-radius: 10px;
+  border: 1px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 0px 30px;
+  padding: 1em;
+  @include screen('tablet') {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 44%, rgba(207, 204, 197, 1) 100%);
+    z-index: 9;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .leftlink_list {
+    margin-bottom: 0.5em;
+    .title {
+      a {
+        display: block;
+        padding: 10px 13px;
+        color: #fff;
+        background-color: $linkColor;
+        border-radius: 10px;
+        font-size: 1.25em;
+        border: 1px solid #fff;
+        position: relative;
+        &:after {
+          content: '';
+          border: 6px solid #fff;
+          border-color: #fff transparent transparent transparent;
+          position: absolute;
+          right: 15px;
+          top: 20px;
+          transition: 0.2s;
+        }
+      }
+      &.open {
+        a {
+          &:after {
+            transform: rotate(180deg);
+            top: 15px;
+          }
+        }
+        + ul {
+          display: block;
+        }
+      }
+    }
+    ul {
+      margin: 5px 0;
+      padding: 0;
+      list-style-type: none;
+      display: none;
+      li {
+        a {
+          display: block;
+          padding: 10px 10px;
+          color: #000;
+          display: flex;
+          align-items: center;
+          font-size: 1.063em;
+          em {
+            font-style: normal;
+            font-size: 0.938em;
+            padding: 3px;
+            background-color: $importantColor;
+            color: #fff;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5px;
+          }
+          &:hover {
+            color: $linkColor;
+          }
+        }
+      }
+    }
+  }
+}
+// mpcenter_block
+// 輪播
+.mpSlideblock {
+  padding: 0;
+
+  .mpSlider {
+    // 箭頭
+    .slick-prev,
+    .slick-next {
+      width: 56px !important;
+      height: 56px !important;
+      border: none;
+      border-radius: 50%;
+      top: 35%;
+      background-size: 24px 24px;
+    }
+    .slick-prev {
+      left: 10px;
+      &:hover,
+      &:focus {
+        box-shadow: none;
+        background-color: #fff;
+      }
+    }
+    .slick-next {
+      right: 10px;
+      &:hover,
+      &:focus {
+        box-shadow: none;
+        background-color: #fff;
+      }
+    }
+    @include screen('mobile') {
+      .slick-prev,
+      .slick-next {
+        top: 25%;
+      }
+    }
+    @include screen('xs_mobile') {
+      .slick-prev,
+      .slick-next {
+        top: 20%;
+      }
+    }
+    @media (max-width: 480px) {
+      .slick-prev,
+      .slick-next {
+        top: 10%;
+      }
+      .slick-prev {
+        left: -20px;
+      }
+      .slick-next {
+        right: -20px;
+      }
+    }
+  }
+}
+// 跑馬燈
+.marqueeblock {
+  padding-bottom: 1em;
+
+  @include screen('mobile') {
+    background-color: transparent;
+    padding-bottom: 1em;
+  }
+}
+
+// 最新公告
+.announcementblock {
+  margin-bottom: 0em;
+
+  @include screen('tablet') {
+    margin-bottom: 1em;
+  }
+
+  .announcement {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    padding: 40px 40px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    @include screen('tablet') {
+      padding: 30px;
+    }
+    .title {
+      color: $primaryColor;
+      font-size: 2rem;
+      font-weight: bolder;
+      margin-bottom: 1em;
+      letter-spacing: 0.05em;
+      font-family: 'Noto Serif TC', serif;
+      display: none;
+      span {
+        color: $lightColor;
+        font-size: 1.75rem;
+        margin-left: 0.3em;
+        letter-spacing: 0;
+        font-family: 'Tenor Sans', sans-serif;
+        font-weight: bolder;
+      }
+      @include screen('xs_mobile') {
+        span {
+          display: block;
+          margin: 0.5em 0 0 0;
+        }
+      }
+    }
+    .announcement_tabs {
+      .more {
+        text-align: right;
+        margin-bottom: 40px;
+        @include screen('xs_mobile') {
+          margin-bottom: 20px;
+        }
+      }
+      table {
+        th {
+          display: none;
+        }
+        tr {
+          @include screen('xs_mobile') {
+            td {
+              border-bottom: 1px solid $lightColor;
+            }
+            > td:last-of-type {
+              border-bottom: none;
+            }
+          }
+        }
+        td {
+          border: none;
+          border-bottom: #fff 1px solid;
+          word-break: break-all;
+          padding: 14px;
+          a {
+            padding-left: 1.5em;
+            @include text-line(1, 1.6em);
+            &:before {
+              content: '';
+              width: 4px;
+              height: 4px;
+              background-color: #000;
+              border-radius: 50%;
+              position: absolute;
+              left: 0.5em;
+              top: 10px;
+            }
+          }
+          @include screen('xs_mobile') {
+            a {
+              text-overflow: initial;
+              height: auto;
+              -webkit-line-clamp: initial;
+            }
+          }
+          @media (max-width: 480px) {
+            padding-left: 10px !important;
+            padding-top: 50px;
+
+            &:before {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 快速連結
+.quicklink_block {
+  .quicklink_group {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    padding: 60px 40px 40px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: center;
+    justify-content: center;
+    @include screen('mobile') {
+      padding: 60px 30px 40px;
+    }
+    .title {
+      flex: 1 1 auto;
+      flex-basis: 100%;
+      text-align: center;
+      font-size: 1.375em;
+      margin: 0 0 2em;
+      font-weight: bolder;
+    }
+    .more {
+      flex: 1 1 auto;
+      flex-basis: 100%;
+      text-align: right;
+    }
+    .quicklink_list {
+      flex: 0 0 auto;
+      flex-basis: 15%;
+      margin: 0 0.83% 1em;
+      @media (max-width: 1100px) {
+        flex-basis: 18%;
+        margin: 0 1% 1em;
+      }
+      @include screen('tablet') {
+        flex-basis: 23%;
+        margin: 0 1% 1em;
+      }
+      @include screen('mobile') {
+        flex-basis: 31%;
+        margin: 0 1.16% 1em;
+      }
+      @media (max-width: 480px) {
+        flex-basis: 48%;
+        margin: 0 1% 1em;
+      }
+      @media (max-width: 360px) {
+        flex-basis: 100%;
+        margin: 0 0 1em;
+      }
+      a {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #000;
+        font-size: 1.25rem;
+        position: relative;
+        transition: 0.5s;
+
+        .pic {
+          flex: 0 0 auto;
+          flex-basis: 106px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 106px;
+          height: 106px;
+          background-color: $primaryColor;
+          border-radius: 50%;
+          transition: 0.5s;
+
+          img {
+            width: 56px;
+            margin: 0 auto;
+          }
+        }
+        p {
+          text-align: center;
+          flex: 0 0 auto;
+          flex-basis: 100%;
+        }
+        &:hover {
+          color: darken($color: $primaryColor, $amount: 13);
+          transform: scale(1.15);
+          .pic {
+            background-color: darken($color: $primaryColor, $amount: 13);
+          }
+        }
+      }
+    }
+  }
+}

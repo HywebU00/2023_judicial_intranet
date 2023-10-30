@@ -1,0 +1,175 @@
+//submenu animation
+@keyframes showMenu {
+  0% {
+    left: 20px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+// pc版 條列menu
+.menu {
+  flex: 1 1 auto;
+  flex-basis: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 99;
+  clear: both;
+  background-image: linear-gradient(180deg, #896936, #c4964d);
+  border-radius: 15px;
+  margin: 2em 0 0;
+  border: 1px solid #fff;
+  box-shadow: #ededed 0px 0px 20px;
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin: 0;
+    border-radius: 0;
+    &:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    & > ul {
+      width: 100%;
+      max-width: $container-max;
+      margin: 0 auto;
+    }
+  }
+  @include screen('mobile') {
+    display: none;
+  }
+  // 預設選單 ul
+  > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // 第一層選單樣式
+    > li {
+      flex: 0 1 16%;
+      // outline: 1px solid red;
+      > a {
+        display: block;
+        padding: 0 0em;
+        min-height: 3em;
+        text-align: center;
+        line-height: 3em;
+        white-space: nowrap;
+        color: #fff;
+        font-size: 1.313rem;
+      }
+      &.hasChild {
+        > a {
+          &:after {
+            content: '';
+
+            display: inline-block;
+            margin-left: 0.5em;
+            vertical-align: middle;
+            border: 7px solid #fff;
+
+            border-color: #fff transparent transparent transparent;
+
+            margin-bottom: 0;
+            margin-top: 0.4em;
+          }
+        }
+      }
+      &:hover {
+        > a {
+          color: #fff;
+          &:after {
+            border: 7px solid #fff;
+            border-color: #fff transparent transparent transparent;
+          }
+        }
+      }
+    }
+  }
+  ul {
+    li {
+      position: relative;
+      a {
+        display: block;
+        text-decoration: none;
+      }
+      ul {
+        display: none;
+        overflow: visible;
+        width: 99%;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 0;
+        z-index: 999999;
+        position: absolute;
+        top: auto;
+        left: 0;
+        list-style: none;
+        text-align: left;
+        animation: showMenu 0.3s $cubic;
+        font-size: 1rem;
+        // 第二層選單樣式
+        li {
+          float: none;
+          a {
+            padding: 0.6em 1.2em;
+            color: #fff;
+            font-weight: bold;
+            &:hover,
+            &:focus {
+              background: $secondaryColor;
+            }
+          }
+        }
+        li.hasChild {
+          > ul {
+            z-index: 999;
+          }
+          > a {
+            padding-right: 2em;
+            &:hover,
+            &:focus {
+              background: $secondaryColor;
+            }
+            &:after {
+              content: '';
+              position: absolute;
+              right: 10px;
+              top: 1.3em;
+              width: 6px;
+              height: 6px;
+              border: 2px solid #fff;
+              transform: rotate(45deg);
+              border-bottom: none;
+              border-left: none;
+            }
+          }
+        }
+        ul {
+          top: 0;
+          left: 100%;
+          animation: none;
+          font-size: 1em;
+        }
+      }
+      &.leftSlider {
+        ul ul {
+          left: auto;
+          right: 100%;
+        }
+      }
+    }
+  }
+}

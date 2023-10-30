@@ -1,0 +1,179 @@
+.tabSet {
+  max-width: 100%;
+  margin: 1em auto;
+  overflow: hidden;
+  @extend %clearfix;
+  @include screen('tablet') {
+    width: auto;
+    height: auto !important;
+  }
+}
+.tabs {
+  position: relative;
+  & > .tabItem {
+    &.active {
+      background-color: $primaryColor;
+      color: #fff;
+    }
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1;
+    display: block;
+    padding: 16px 0 14px;
+    text-align: center;
+    background-color: #aaa;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    @include text-overflow;
+    box-sizing: border-box;
+    &:hover,
+    &:focus {
+      background: $primaryColor;
+    }
+    @include screen('mobile') {
+      float: none;
+      width: 100% !important;
+      border-bottom: 1px solid #888;
+      &.active {
+        border-color: #bbb;
+      }
+    }
+  }
+}
+
+.announcement_tabs {
+  position: relative;
+  padding: 0 10px;
+
+  & > .tabItem {
+    &.active {
+      background-color: #fff;
+      color: $primaryColor;
+    }
+
+    float: left;
+    margin: 7px 0 0 0;
+    padding: 0;
+    font-size: 1.125em;
+    line-height: 1;
+    display: block;
+    padding: 12px 0px 10px;
+    text-align: center;
+    background-color: $primaryColor;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    @include text-overflow;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: none;
+    position: relative;
+    z-index: 9;
+    &:hover,
+    &:focus {
+      background-color: #fff;
+      color: $primaryColor;
+      box-shadow: none;
+    }
+    &:first-of-type {
+      margin-left: 10px;
+    }
+    @include screen('tablet') {
+      float: none;
+      width: 100% !important;
+      //   border-bottom: 1px solid #888;
+      margin-bottom: 5px;
+
+      &.active {
+        border-color: #bbb;
+        background-color: $importantColor;
+        color: #fff;
+      }
+    }
+  }
+}
+//多組 可設定差異
+.example-2 {
+  .tabItem:hover {
+    background: $secondaryColor;
+  }
+  .tabItem.active {
+    background: $secondaryColor;
+  }
+}
+// 顯示content
+.active + .tabContent {
+  display: block;
+}
+.tabContent {
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  clear: both;
+  padding: 30px 20px;
+  display: none;
+  @include screen('mobile') {
+    position: static;
+  }
+  ul {
+    @include li-reset;
+  }
+  li {
+    margin: 0 0 1.3em 0;
+    padding: 0;
+    line-height: 1.6;
+    border-bottom: 1px #ccc dashed;
+    @include screen('mobile') {
+      @include text-overflow();
+    }
+    a {
+      @include aSetting_nocolor;
+    }
+    time {
+      display: inline-block;
+      margin: 0 0 0 1em;
+      font-size: 0.813em;
+      color: #666;
+    }
+  }
+}
+.announcement_tabs {
+  .tabContent {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    clear: both;
+    padding: 20px 0px;
+    display: none;
+    @include screen('tablet') {
+      position: static;
+    }
+    ul {
+      @include li-reset;
+    }
+    li {
+      margin: 0 0 1.3em 0;
+      padding: 0;
+      line-height: 1.6;
+      border-bottom: 1px #ccc dashed;
+      @include screen('tablet') {
+        @include text-overflow();
+      }
+      a {
+        @include aSetting_nocolor;
+      }
+      time {
+        display: inline-block;
+        margin: 0 0 0 1em;
+        font-size: 0.813em;
+        color: #666;
+      }
+    }
+  }
+}

@@ -1,0 +1,213 @@
+.conditional_searchbtn {
+  // padding: 0.3em 1em;
+  font-size: 1.125em;
+  border-radius: 10px;
+  background-image: url(../images/icon/icon_search_white.svg);
+  background-position: 20px 12px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: 50px;
+  &:hover,
+  &:focus {
+    background-image: url(../images/icon/icon_search_white.svg);
+    background-position: 20px 12px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+  }
+}
+.conditional_searchblock {
+  padding: 1em 2em;
+  border-radius: 10px;
+  background-color: rgba(207, 204, 197, 0.3);
+  margin-bottom: 2em;
+  display: none;
+  font-size: 1.125em;
+  .form_grp {
+  }
+}
+.conditional_searchblock_full {
+  padding: 1em 2em;
+  border-radius: 10px;
+  background-color: rgba(207, 204, 197, 0.3);
+  margin-bottom: 2em;
+  font-size: 1.125em;
+  display: block;
+  .form_grp {
+  }
+}
+// 相簿列表
+.photolist_block,
+.videolist_block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .photolist,
+  .videolist {
+    flex: 0 0 auto;
+    flex-basis: 31%;
+    margin: 0 0 2em;
+    position: relative;
+    a {
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 1.125em;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 5px 0px;
+
+      .pic {
+        flex: 1 1 auto;
+        flex-basis: 100%;
+        position: relative;
+        transition: 0.5s;
+        @include aspect-ratio(4, 3);
+        border-radius: 10px 10px 0 0;
+        img {
+          transition: 0.5s;
+        }
+      }
+      .photocontent {
+        padding: 0.5em 1em 1em;
+        .date {
+          color: #666;
+          margin: 0 0 0.5em;
+        }
+        .title {
+          color: #000;
+          line-height: 1.6em;
+          @include text-line(2, 1.6em);
+        }
+      }
+      &:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        .pic {
+          img {
+            transform: scale(1.1);
+          }
+        }
+        .photocontent {
+          .title {
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+    @include screen('mobile') {
+      flex-basis: 48%;
+    }
+    @media (max-width: 480px) {
+      flex-basis: 100%;
+    }
+  }
+  .videolist {
+    a {
+      &:before {
+        content: '';
+        width: 60px;
+        height: 60px;
+        background-color: darken($color: $color-red, $amount: 12);
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+        display: block;
+        z-index: 2;
+        transition: 0.5s;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      &:after {
+        content: '';
+        border: 14px solid #fff;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-15%, -50%);
+        display: block;
+        z-index: 3;
+      }
+      &:hover {
+        &:before {
+          background-color: $color-red;
+        }
+      }
+    }
+  }
+}
+// 查詢結果
+.list_searchresult {
+  & > ul,
+  ol {
+    list-style-type: none;
+    padding: 0;
+    border-top: 2px solid $primaryColor;
+    & > li {
+      padding: 1em 0;
+      border-bottom: 1px solid #ddd;
+      position: relative; // outline: 1px solid blue;
+      .tag {
+        margin-left: 2em;
+      }
+      & > a {
+        display: flex;
+        padding-left: 3em;
+        position: relative;
+        line-height: 1.45em;
+        color: $color-word;
+        flex-wrap: wrap;
+        font-size: 1.125em;
+        &:hover {
+          .title {
+            color: $aHover;
+          }
+        }
+        .num {
+          flex: 0 0 auto;
+          flex-basis: 2.5em;
+          width: 2.5em;
+          text-align: right;
+          position: absolute;
+          top: 0;
+          left: 0;
+          &:after {
+            content: '.';
+            display: inline-block;
+          }
+        }
+        .title {
+          flex: 1 1 auto;
+          flex-basis: calc(100% - 2.5em);
+        }
+        p {
+          flex: 1 1 auto;
+          flex-basis: 100%;
+          padding: 0;
+          margin: 0.5em 0;
+          color: #666;
+        }
+        em {
+          color: $lightColor;
+          font-style: normal;
+        }
+      }
+
+      span.time {
+        flex: 0 0 auto;
+        color: #666;
+        font-size: 0.938em;
+        margin-right: 1em;
+      }
+      span.dept {
+        flex: 0 0 auto;
+        color: #666;
+        font-size: 0.938em;
+        @include screen('mobile') {
+          display: block;
+        }
+      }
+    }
+  }
+}

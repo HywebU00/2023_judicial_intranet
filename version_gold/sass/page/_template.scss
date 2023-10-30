@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  &.noscroll {
+    position: static !important;
+    width: 100%;
+    height: 100%;
+    overflow: hidden !important;
+    overflow-y: hidden !important;
+    margin: 0;
+    padding: 0;
+  }
+  &.fixed {
+    height: 100%;
+    overflow: hidden !important;
+    width: 100%;
+    position: fixed;
+  }
+}
+
+// 最外圍預設為100%
+.wrapper {
+  width: 100%;
+  margin: 0px auto;
+
+  &.mpwrapper {
+    background-image: url('../images/wrapperbg.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: #e7d6ba;
+    .main {
+      position: relative;
+      padding-top: 20px;
+      background-image: url('../images/main_topbg.png');
+      background-repeat: no-repeat;
+      background-position: center top;
+
+      @include screen('mobile') {
+        padding-top: 80px;
+      }
+      &:before {
+        content: '';
+        width: 100%;
+        height: 115px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+      }
+    }
+    footer {
+      background-color: transparent;
+    }
+  }
+  @include screen('mobile') {
+    // background: #fff;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+}
+
+// 整體共用container樣式，請注意首頁切版頁面的整齊
+.container {
+  @include gutter($grid-gutter-width);
+  margin: 0 auto;
+  max-width: $container-max; //請看_variable.scss
+  // outline: 1px solid red;
+  @include screen('mobile') {
+    @include gutter(60px);
+  }
+}
+
+.main {
+  position: relative;
+  margin: 0 auto;
+  // 可先設定一個中央區塊最大寬，限制accesskey對齊
+
+  @include screen('mobile') {
+    padding-top: 80px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    &.logincontainer {
+      @include gutter(60px);
+    }
+    @include screen('tablet') {
+      display: block;
+      &.logincontainer {
+        padding-left: 40px;
+        padding-right: 30px;
+      }
+    }
+    .leftlink_btn {
+      display: none;
+      position: absolute;
+      left: 0em;
+      top: 3px;
+      z-index: 9;
+      width: 1.5em;
+      @include screen('tablet') {
+        display: block;
+      }
+      a {
+        color: #fff;
+        display: block;
+        background-color: $primaryColor;
+        padding: 2em 0.5em 1em;
+        border-radius: 0 5px 5px 0;
+        width: 2em;
+        position: relative;
+        &:before {
+          content: '';
+          border: 2px solid #fff;
+          border-right: none;
+          border-bottom: none;
+          transform: rotate(135deg);
+          position: absolute;
+          top: 0.8em;
+          left: 0.6em;
+          width: 8px;
+          height: 8px;
+        }
+        &.open {
+          &:before {
+            left: 0.8em;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+    .mpleft_block {
+      flex: 0 0 auto;
+      flex-basis: 210px;
+      max-width: 210px;
+      margin-right: 20px;
+      position: relative;
+      @include screen('tablet') {
+        position: absolute;
+        left: -210px;
+        top: 0;
+        bottom: 0;
+        width: 210px;
+        transition: 0.5s;
+        z-index: 10;
+        &.open {
+          left: 2em;
+        }
+      }
+
+      &.hidden {
+        + .mpcenter_block {
+          flex: none;
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+      }
+      + .mpcenter_block {
+        flex: 1 1 auto;
+        flex-basis: calc(100% - 230px);
+        max-width: calc(100% - 230px);
+        @include screen('tablet') {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  h2 {
+    line-height: 1.25em;
+  }
+  &.small_size {
+    font-size: 0.938em;
+  }
+  &.large_size {
+    font-size: 1.125em;
+  }
+}
+
+////////////////////////////////////////////////////////////
+// 為了與首頁區隔，請在內頁加上innerpage ClassName
+.innerpage {
+  // background-color: #fff;
+  padding: 20px 0 4em;
+  @include screen('mobile') {
+    padding-top: 80px;
+  }
+  > .container {
+    padding-left: 40px;
+    padding-right: 30px;
+    display: flex;
+  }
+  .nodemenu_btn {
+    display: none;
+    position: absolute;
+    left: 0em;
+    top: 185px;
+    z-index: 9;
+    width: 1.5em;
+    @include screen('tablet') {
+      display: block;
+    }
+    a {
+      color: #fff;
+      display: block;
+      background-color: $primaryColor;
+      padding: 2em 0.5em 1em;
+      border-radius: 0 5px 5px 0;
+      width: 2em;
+      position: relative;
+      &:before {
+        content: '';
+        border: 2px solid #fff;
+        border-right: none;
+        border-bottom: none;
+        transform: rotate(135deg);
+        position: absolute;
+        top: 0.8em;
+        left: 0.6em;
+        width: 8px;
+        height: 8px;
+      }
+      &.open {
+        &:before {
+          left: 0.8em;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  .center_block {
+    flex: none;
+    flex-basis: 100%;
+    max-width: 100%;
+
+    .incontentblock {
+      background-color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.14) 0px 0px 30px;
+      border-radius: 10px;
+      padding: 2em;
+    }
+  }
+  .left_block {
+    flex: none;
+    flex-basis: 210px;
+    max-width: 210px;
+    margin-right: 20px;
+    &.hidden {
+      + .center_block {
+        flex: none;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+    + .center_block {
+      flex: auto;
+      flex-basis: calc(100% - 230px);
+      max-width: calc(100% - 230px);
+    }
+    @include screen('tablet') {
+      position: absolute;
+      left: -210px;
+      top: 185px;
+      bottom: 0;
+      width: 210px;
+      transition: 0.5s;
+      z-index: 10;
+      &.open {
+        left: 2em;
+      }
+      + .center_block {
+        flex: none;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  h2.title {
+    line-height: 1.25em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.hidden {
+  display: none;
+}

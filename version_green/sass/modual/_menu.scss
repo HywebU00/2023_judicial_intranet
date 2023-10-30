@@ -1,0 +1,188 @@
+//submenu animation
+@keyframes showMenu {
+  0% {
+    left: 20px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+// pc版 條列menu
+.menu {
+  flex: 1 1 auto;
+  flex-basis: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 99;
+  clear: both;
+  background-color: $primaryColor;
+  border-radius: 0 30px 30px 0;
+  margin-left: -700px;
+  width: 100px;
+  padding: 40px 22px;
+  left: 50%;
+  top: 0;
+  bottom: 5%;
+  transition: 0.5s;
+  overflow-y: scroll;
+  &.menuopen {
+    width: 200px;
+    > ul {
+      > li {
+        &:before {
+          display: none;
+        }
+        border-bottom: 2px solid #fff;
+        > a {
+          text-align: left;
+        }
+        &.hasChild {
+          > a {
+            &:after {
+              content: '';
+              display: block;
+              position: absolute;
+              right: 5px;
+              top: 5px;
+              border: 7px solid #fff;
+              border-color: #fff transparent transparent transparent;
+              margin-bottom: 0;
+              margin-top: 0.4em;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1400px) {
+    margin-left: 0;
+    left: 0;
+  }
+
+  @include screen('mobile') {
+    display: none;
+  }
+  // 預設選單 ul
+  > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    // 第一層選單樣式
+    > li {
+      flex: 0 1 100%;
+      position: relative;
+      margin-bottom: 1em;
+      &:before {
+        content: '';
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 12px;
+      }
+
+      > a {
+        display: block;
+        padding: 5px 0 10px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.25rem;
+        position: relative;
+        // outline: 1px solid red;
+      }
+      &.hasChild {
+        > a {
+        }
+      }
+      // &:hover {
+      //   > a {
+      //     color: #fff;
+      //     &:after {
+      //       border: 7px solid #fff;
+      //       border-color: #fff transparent transparent transparent;
+      //     }
+      //   }
+      // }
+    }
+  }
+  ul {
+    li {
+      position: relative;
+      a {
+        display: block;
+        text-decoration: none;
+      }
+      ul {
+        display: none;
+        overflow: visible;
+        width: 99%;
+        background: darken($color: $primaryColor, $amount: 10);
+        padding: 0;
+        z-index: 999999;
+        position: relative;
+        top: auto;
+        left: 0;
+        list-style: none;
+        text-align: left;
+        animation: showMenu 0.3s $cubic;
+        font-size: 1rem;
+        // 第二層選單樣式
+        li {
+          float: none;
+          a {
+            padding: 0.6em 1.2em;
+            color: #fff;
+            font-weight: bold;
+            &:hover,
+            &:focus {
+              background: $importantColor;
+            }
+          }
+        }
+        li.hasChild {
+          > ul {
+            z-index: 999;
+          }
+          > a {
+            padding-right: 2em;
+            &:hover,
+            &:focus {
+              background: $importantColor;
+            }
+            &:after {
+              content: '';
+              position: absolute;
+              right: 10px;
+              top: 1.3em;
+              width: 6px;
+              height: 6px;
+              border: 2px solid #fff;
+              transform: rotate(45deg);
+              border-bottom: none;
+              border-left: none;
+            }
+          }
+        }
+        ul {
+          top: 0;
+          left: 0;
+          animation: none;
+          font-size: 1em;
+        }
+      }
+      &.leftSlider {
+        ul ul {
+          left: auto;
+          right: 100%;
+        }
+      }
+    }
+  }
+}
