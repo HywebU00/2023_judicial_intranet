@@ -277,7 +277,7 @@
           display: none;
           position: absolute;
           width: 60px;
-
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           background-color: #fff;
           padding: 0.5em;
 
@@ -651,8 +651,8 @@
   box-sizing: border-box;
   position: absolute;
   right: 0;
-  background: rgb(54, 149, 183);
-  background: linear-gradient(180deg, rgba(54, 149, 183, 1) 0%, rgba(31, 80, 114, 1) 100%);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fff;
   vertical-align: top;
   padding: 20px;
   border-radius: 10px;
@@ -728,11 +728,10 @@
       }
       a {
         @include aSetting_nocolor;
-        color: #fff;
+
         &:hover,
         &:focus {
           text-decoration: underline;
-          color: #fff;
         }
       }
     }

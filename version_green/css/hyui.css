@@ -3740,8 +3740,8 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   box-sizing: border-box;
   position: absolute;
   right: 0;
-  background: rgb(54, 149, 183);
-  background: linear-gradient(180deg, rgb(54, 149, 183) 0%, rgb(31, 80, 114) 100%);
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 25px 0px;
   vertical-align: top;
   padding: 20px;
   border-radius: 10px;
@@ -3827,7 +3827,6 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 .search .keywordHot ul a {
   color: #222;
   text-decoration: none;
-  color: #fff;
 }
 .search .keywordHot ul a:hover, .search .keywordHot ul a:focus {
   color: #1cc49d;
@@ -3835,7 +3834,6 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .search .keywordHot ul a:hover, .search .keywordHot ul a:focus {
   text-decoration: underline;
-  color: #fff;
 }
 
 .m_search {
@@ -8140,7 +8138,7 @@ table.table_sprite tr:nth-child(even) {
 /* 上一則 位置 圖片*/
 .slick-prev {
   left: 25px;
-  background: url("../images/slick/icon_arrow_left_inverse.png") center center no-repeat RGBA(255, 255, 255, 0.5);
+  background: url("../images/slick/icon_arrow_left_inverse.png") center center no-repeat RGBA(255, 255, 255, 0);
   background-size: 30px 30px;
   /* 箭頭 hover及focus 樣式 */
 }
@@ -8152,7 +8150,7 @@ table.table_sprite tr:nth-child(even) {
 /* 下一則 位置 圖片*/
 .slick-next {
   right: 25px;
-  background: url("../images/slick/icon_arrow_right_inverse.png") center center no-repeat RGBA(255, 255, 255, 0.5);
+  background: url("../images/slick/icon_arrow_right_inverse.png") center center no-repeat RGBA(255, 255, 255, 0);
   background-size: 30px 30px;
   /* 箭頭 hover及focus 樣式 */
 }
@@ -9651,16 +9649,22 @@ body.fixed {
 }
 .serviceblock .service .service_slider .slick-prev,
 .serviceblock .service .service_slider .slick-next {
-  width: 40px !important;
-  height: 40px !important;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50%;
+}
+.serviceblock .service .service_slider .slick-prev:hover, .serviceblock .service .service_slider .slick-prev:focus,
+.serviceblock .service .service_slider .slick-next:hover,
+.serviceblock .service .service_slider .slick-next:focus {
+  box-shadow: none;
 }
 .serviceblock .service .service_slider .slick-prev {
-  left: -45px;
-  top: 50px;
+  left: -50px;
+  top: 40px;
 }
 .serviceblock .service .service_slider .slick-next {
-  right: -45px;
-  top: 50px;
+  right: -50px;
+  top: 40px;
 }
 .serviceblock .service .service_group {
   padding: 0 5px;
@@ -9868,6 +9872,25 @@ body.fixed {
 .external_link_block .container .theme_block .theme_slider {
   width: 70%;
   margin: 0 auto 30px;
+}
+.external_link_block .container .theme_block .theme_slider .slick-prev,
+.external_link_block .container .theme_block .theme_slider .slick-next {
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50%;
+}
+.external_link_block .container .theme_block .theme_slider .slick-prev:hover, .external_link_block .container .theme_block .theme_slider .slick-prev:focus,
+.external_link_block .container .theme_block .theme_slider .slick-next:hover,
+.external_link_block .container .theme_block .theme_slider .slick-next:focus {
+  box-shadow: none;
+}
+.external_link_block .container .theme_block .theme_slider .slick-prev {
+  left: -50px;
+  top: 35%;
+}
+.external_link_block .container .theme_block .theme_slider .slick-next {
+  right: -50px;
+  top: 35%;
 }
 .external_link_block .container .theme_block .theme_slider .themelist a .images {
   display: block;

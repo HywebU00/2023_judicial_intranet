@@ -110,7 +110,7 @@
         display: none;
         overflow: visible;
         width: 99%;
-        background: rgba(0, 0, 0, 0.8);
+        background-color: rgba(75, 57, 31, 0.95);
         padding: 0;
         z-index: 999999;
         position: absolute;
@@ -129,7 +129,7 @@
             font-weight: bold;
             &:hover,
             &:focus {
-              background: $secondaryColor;
+              background: $primaryColor;
             }
           }
         }
@@ -141,7 +141,7 @@
             padding-right: 2em;
             &:hover,
             &:focus {
-              background: $secondaryColor;
+              background: $primaryColor;
             }
             &:after {
               content: '';

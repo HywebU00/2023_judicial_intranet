@@ -113,16 +113,21 @@
       // 箭頭
       .slick-prev,
       .slick-next {
-        width: 40px !important;
-        height: 40px !important;
+        width: 60px !important;
+        height: 60px !important;
+        border-radius: 50%;
+        &:hover,
+        &:focus {
+          box-shadow: none;
+        }
       }
       .slick-prev {
-        left: -45px;
-        top: 50px;
+        left: -50px;
+        top: 40px;
       }
       .slick-next {
-        right: -45px;
-        top: 50px;
+        right: -50px;
+        top: 40px;
       }
     }
     .service_group {
@@ -332,6 +337,25 @@
       .theme_slider {
         width: 70%;
         margin: 0 auto 30px;
+        // 箭頭
+        .slick-prev,
+        .slick-next {
+          width: 60px !important;
+          height: 60px !important;
+          border-radius: 50%;
+          &:hover,
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        .slick-prev {
+          left: -50px;
+          top: 35%;
+        }
+        .slick-next {
+          right: -50px;
+          top: 35%;
+        }
         .themelist {
           a {
             .images {

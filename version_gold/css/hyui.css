@@ -3780,7 +3780,8 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   box-sizing: border-box;
   position: absolute;
   right: 0;
-  background-color: #644d28;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fff;
   vertical-align: top;
   padding: 20px;
   border-radius: 10px;
@@ -3866,7 +3867,6 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 .search .keywordHot ul a {
   color: #222;
   text-decoration: none;
-  color: #fff;
 }
 .search .keywordHot ul a:hover, .search .keywordHot ul a:focus {
   color: #b78940;
@@ -3874,7 +3874,6 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .search .keywordHot ul a:hover, .search .keywordHot ul a:focus {
   text-decoration: underline;
-  color: #fff;
 }
 
 .m_search {
@@ -4071,7 +4070,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   display: none;
   overflow: visible;
   width: 99%;
-  background: rgba(0, 0, 0, 0.8);
+  background-color: rgba(75, 57, 31, 0.95);
   padding: 0;
   z-index: 999999;
   position: absolute;
@@ -4091,7 +4090,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   font-weight: bold;
 }
 .menu ul li ul li a:hover, .menu ul li ul li a:focus {
-  background: #c4964d;
+  background: #896936;
 }
 .menu ul li ul li.hasChild > ul {
   z-index: 999;
@@ -4100,7 +4099,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   padding-right: 2em;
 }
 .menu ul li ul li.hasChild > a:hover, .menu ul li ul li.hasChild > a:focus {
-  background: #c4964d;
+  background: #896936;
 }
 .menu ul li ul li.hasChild > a:after {
   content: "";

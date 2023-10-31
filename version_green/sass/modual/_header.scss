@@ -643,8 +643,8 @@
   box-sizing: border-box;
   position: absolute;
   right: 0;
-  background: rgb(54, 149, 183);
-  background: linear-gradient(180deg, rgba(54, 149, 183, 1) 0%, rgba(31, 80, 114, 1) 100%);
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 25px 0px;
   vertical-align: top;
   padding: 20px;
   border-radius: 10px;
@@ -720,11 +720,10 @@
       }
       a {
         @include aSetting_nocolor;
-        color: #fff;
+
         &:hover,
         &:focus {
           text-decoration: underline;
-          color: #fff;
         }
       }
     }

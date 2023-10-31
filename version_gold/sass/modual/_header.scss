@@ -667,7 +667,8 @@
   box-sizing: border-box;
   position: absolute;
   right: 0;
-  background-color: darken($color: $primaryColor, $amount: 10);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fff;
   vertical-align: top;
   padding: 20px;
   border-radius: 10px;
@@ -743,11 +744,10 @@
       }
       a {
         @include aSetting_nocolor;
-        color: #fff;
+
         &:hover,
         &:focus {
           text-decoration: underline;
-          color: #fff;
         }
       }
     }

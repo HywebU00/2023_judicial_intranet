@@ -156,7 +156,7 @@
 
 .slick-prev {
   left: 25px;
-  background: url('../images/slick/icon_arrow_left_inverse.png') center center no-repeat RGBA(255, 255, 255, 0.5);
+  background: url('../images/slick/icon_arrow_left_inverse.png') center center no-repeat RGBA(255, 255, 255, 0);
   background-size: 30px 30px;
   /* 箭頭 hover及focus 樣式 */
   &:hover,
@@ -170,7 +170,7 @@
 
 .slick-next {
   right: 25px;
-  background: url('../images/slick/icon_arrow_right_inverse.png') center center no-repeat RGBA(255, 255, 255, 0.5);
+  background: url('../images/slick/icon_arrow_right_inverse.png') center center no-repeat RGBA(255, 255, 255, 0);
   background-size: 30px 30px;
   /* 箭頭 hover及focus 樣式 */
   &:hover,
