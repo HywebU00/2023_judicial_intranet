@@ -3806,6 +3806,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   padding: 0.25em 0.5em;
   box-shadow: none;
   width: auto;
+  border: 1px solid #9b773d;
 }
 .search .form_grp input[type=submit] {
   min-width: auto;
