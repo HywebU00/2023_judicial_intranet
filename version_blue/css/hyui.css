@@ -9681,6 +9681,12 @@ body.fixed {
   left: 140px;
   bottom: 45px;
 }
+@media (max-width: 480px) {
+  .serviceblock .service .service_slider .slick-dots {
+    left: 10px;
+    bottom: 0px;
+  }
+}
 .serviceblock .service .service_slider .slick-dots li {
   margin: 0 13px;
 }

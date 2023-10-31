@@ -138,17 +138,17 @@
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before {
   opacity: 1;
-  background: #21baff;
-  box-shadow: 0px 0px 0px 1px #21baff; /* 讓滑過去的點大一些 */
+  background: #169779;
+  box-shadow: 0px 0px 0px 1px #169779; /* 讓滑過去的點大一些 */
 }
 /* focus 過去的點變色 */
 .slick-dots li button:focus:before {
   opacity: 1;
-  background: #ff3e4d;
-  box-shadow: 0px 0px 0px 1px #ff3e4d;
+  background: #f06c0a;
+  box-shadow: 0px 0px 0px 1px #f06c0a;
 }
 /* 點 active 的樣子 */
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  background: #141e53;
+  background: #169779;
 }

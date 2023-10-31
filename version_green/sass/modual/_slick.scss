@@ -252,11 +252,11 @@
         background: $aHover;
         &:hover {
           /* 點 active  hover的顏色 */
-          background: $lightColor;
+          background: $secondaryColor;
         }
         &:focus {
           /* 點 active  focus的顏色 */
-          background: $lightColor;
+          background: $importantColor;
         }
       }
     }

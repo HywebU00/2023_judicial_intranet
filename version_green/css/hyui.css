@@ -1319,7 +1319,7 @@ th {
 }
 
 :focus-visible {
-  outline: 2px dashed #ff3e4d;
+  outline: 2px dashed #f06c0a;
 }
 
 .accesskey {
@@ -1772,7 +1772,7 @@ kbd kbd {
   cursor: pointer;
   color: #fff;
   outline: none;
-  box-shadow: 0 0px 0px 2px #ff3e4d !important;
+  box-shadow: 0 0px 0px 2px #f06c0a !important;
 }
 .btn.active {
   background: #ededed;
@@ -1801,7 +1801,7 @@ kbd kbd {
   cursor: pointer;
   color: #fff;
   outline: none;
-  box-shadow: 0 0px 0px 2px #ff3e4d !important;
+  box-shadow: 0 0px 0px 2px #f06c0a !important;
 }
 .btn-green.active {
   background: #2f9b2f;
@@ -1826,7 +1826,7 @@ kbd kbd {
   cursor: pointer;
   color: #fff;
   outline: none;
-  box-shadow: 0 0px 0px 2px #ff3e4d !important;
+  box-shadow: 0 0px 0px 2px #f06c0a !important;
 }
 .btn-blue.active {
   background: #0073e6;
@@ -1851,7 +1851,7 @@ kbd kbd {
   cursor: pointer;
   color: #fff;
   outline: none;
-  box-shadow: 0 0px 0px 2px #ff3e4d !important;
+  box-shadow: 0 0px 0px 2px #f06c0a !important;
 }
 .btn-yellow.active {
   background: #fecd36;
@@ -1876,7 +1876,7 @@ kbd kbd {
   cursor: pointer;
   color: #fff;
   outline: none;
-  box-shadow: 0 0px 0px 2px #ff3e4d !important;
+  box-shadow: 0 0px 0px 2px #f06c0a !important;
 }
 .btn-orange.active {
   background: #ea4d00;
@@ -1901,7 +1901,7 @@ kbd kbd {
   cursor: pointer;
   color: #fff;
   outline: none;
-  box-shadow: 0 0px 0px 2px #ff3e4d !important;
+  box-shadow: 0 0px 0px 2px #f06c0a !important;
 }
 .btn-red.active {
   background: #ed0000;
@@ -1926,7 +1926,7 @@ kbd kbd {
   cursor: pointer;
   color: #fff;
   outline: none;
-  box-shadow: 0 0px 0px 2px #ff3e4d !important;
+  box-shadow: 0 0px 0px 2px #f06c0a !important;
 }
 .btn-purple.active {
   background: #4e5384;
@@ -1951,7 +1951,7 @@ kbd kbd {
   cursor: pointer;
   color: #fff;
   outline: none;
-  box-shadow: 0 0px 0px 2px #ff3e4d !important;
+  box-shadow: 0 0px 0px 2px #f06c0a !important;
 }
 .btn-black.active {
   background: #737373;
@@ -1976,7 +1976,7 @@ kbd kbd {
   cursor: pointer;
   color: #fff;
   outline: none;
-  box-shadow: 0 0px 0px 2px #ff3e4d !important;
+  box-shadow: 0 0px 0px 2px #f06c0a !important;
 }
 .btn-submit.active {
   background: #1cc49d;
@@ -2005,7 +2005,7 @@ kbd kbd {
   cursor: pointer;
   color: #fff;
   outline: none;
-  box-shadow: 0 0px 0px 2px #ff3e4d !important;
+  box-shadow: 0 0px 0px 2px #f06c0a !important;
 }
 .btn-search.active {
   background: #1cc49d;
@@ -3772,7 +3772,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   padding: 0.2em 0.8em;
 }
 .search .form_grp input:focus {
-  box-shadow: 0 0px 0px 2px #ff3e4d;
+  box-shadow: 0 0px 0px 2px #f06c0a;
 }
 .search .form_grp button,
 .search .form_grp .btn,
@@ -7035,7 +7035,7 @@ input[type=checkbox]:focus {
   cursor: pointer;
   color: #fff;
   outline: none;
-  box-shadow: 0 0px 0px 2px #ff3e4d !important;
+  box-shadow: 0 0px 0px 2px #f06c0a !important;
 }
 .upload_grp .upload_btn.active {
   background: #19ad8b;
@@ -8105,7 +8105,7 @@ table.table_sprite tr:nth-child(even) {
   right: 0;
   bottom: 0;
   z-index: 99;
-  box-shadow: 0px 0px 0px 2px #ff3e4d inset;
+  box-shadow: 0px 0px 0px 2px #f06c0a inset;
 }
 
 /* ---箭頭的樣式--- */
@@ -8231,7 +8231,7 @@ table.table_sprite tr:nth-child(even) {
 }
 .slick-dots li.slick-active button:focus {
   /* 點 active  focus的顏色 */
-  background: #169779;
+  background: #f06c0a;
 }
 
 .mpSlider {
@@ -9940,7 +9940,7 @@ body.fixed {
   right: 0;
 }
 .external_link_block .container .theme_block .theme_slider .themelist a:focus-visible:before {
-  box-shadow: 0 0px 0px 2px #ff3e4d inset;
+  box-shadow: 0 0px 0px 2px #f06c0a inset;
 }
 .external_link_block .container .quicklink_block {
   flex: 1 1 auto;
