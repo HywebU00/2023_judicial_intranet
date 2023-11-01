@@ -3635,7 +3635,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .header .login_lightbox .flex-form {
   height: 80%;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .header .login_lightbox .form_grp {
   border-bottom: none;
