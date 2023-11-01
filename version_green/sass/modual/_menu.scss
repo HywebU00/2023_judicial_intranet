@@ -26,6 +26,7 @@
   bottom: 5%;
   transition: 0.5s;
   overflow-y: scroll;
+
   &.menuopen {
     width: 200px;
     > ul {
