@@ -9700,6 +9700,9 @@ body.fixed {
   align-items: flex-end;
   height: calc(100% - 40px);
 }
+.serviceblock .service .service_group .service_list a .pic img {
+  width: 60px;
+}
 .serviceblock .service .service_group .service_list a .sub_title {
   flex: 1 1 auto;
   flex-basis: 100%;

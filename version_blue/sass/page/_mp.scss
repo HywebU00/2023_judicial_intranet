@@ -229,6 +229,9 @@
             justify-content: center;
             align-items: center;
             height: calc(180px - 54px);
+            img {
+              width: 66px;
+            }
           }
           .sub_title {
             flex: 1 1 auto;
@@ -389,6 +392,7 @@
     border-radius: 20px;
     display: flex;
     align-items: center;
+
     // 箭頭
     .slick-prev,
     .slick-next {
@@ -450,7 +454,7 @@
           flex-basis: 56px;
           margin-right: 14px;
           img {
-            width: 56px;
+            width: 50px;
             margin: 0 auto;
           }
         }

@@ -161,6 +161,9 @@
             justify-content: center;
             align-items: flex-end;
             height: calc(100% - 40px);
+            img {
+              width: 60px;
+            }
           }
           .sub_title {
             flex: 1 1 auto;

@@ -9763,6 +9763,9 @@ body.fixed {
   align-items: center;
   height: 126px;
 }
+.serviceblock .service .service_group .service_list a .pic img {
+  width: 66px;
+}
 .serviceblock .service .service_group .service_list a .sub_title {
   flex: 1 1 auto;
   flex-basis: 100%;
@@ -9994,7 +9997,7 @@ body.fixed {
   margin-right: 14px;
 }
 .quicklink_block .quicklink_Slider .quicklink_list a .pic img {
-  width: 56px;
+  width: 50px;
   margin: 0 auto;
 }
 .quicklink_block .quicklink_Slider .quicklink_list a:hover {
