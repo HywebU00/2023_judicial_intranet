@@ -233,23 +233,30 @@ $(function () {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 1400,
         settings: {
           slidesToShow: 6,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 1050,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 5,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 920,
+        breakpoint: 1050,
         settings: {
           slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 920,
+        settings: {
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
@@ -261,7 +268,7 @@ $(function () {
         },
       },
       {
-        breakpoint: 575,
+        breakpoint: 640,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,

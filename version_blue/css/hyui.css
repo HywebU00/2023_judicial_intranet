@@ -3491,8 +3491,9 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   }
 }
 .header .member_login_btn button.btn:hover {
-  background-color: #3695b7;
-  border: 1px solid #1c2787;
+  background-color: #141e53;
+  border: 1px solid #141e53;
+  color: #fff;
 }
 .header .login_lightbox {
   position: fixed;

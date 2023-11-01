@@ -389,8 +389,9 @@
         box-shadow: none;
       }
       &:hover {
-        background-color: $lightColor;
-        border: 1px solid $form-focus;
+        background-color: $primaryColor;
+        border: 1px solid $primaryColor;
+        color: #fff;
       }
     }
   }
