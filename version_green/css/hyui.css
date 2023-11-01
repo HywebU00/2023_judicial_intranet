@@ -9744,6 +9744,11 @@ body.fixed {
 .announcementblock .announcement {
   position: relative;
 }
+@media screen and (max-width: 991px) {
+  .announcementblock .announcement {
+    margin-bottom: 3em;
+  }
+}
 .announcementblock .announcement .title {
   color: #169779;
   font-size: 1.5rem;
@@ -9841,6 +9846,15 @@ body.fixed {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 900px) {
+  .external_link_block .container {
+    display: block;
+  }
+  .external_link_block .container .theme_block {
+    margin-right: 0 !important;
+    margin-bottom: 2em;
+  }
+}
 .external_link_block .container .theme_block,
 .external_link_block .container .quicklink_block {
   background-color: #fff;
@@ -9869,6 +9883,9 @@ body.fixed {
   position: absolute;
   top: -8px;
 }
+.external_link_block .container .more {
+  text-align: right;
+}
 .external_link_block .container .theme_block {
   flex: 0 0 auto;
   flex-basis: 40%;
@@ -9876,7 +9893,7 @@ body.fixed {
 }
 .external_link_block .container .theme_block .theme_slider {
   width: 70%;
-  margin: 0 auto 30px;
+  margin: 0 auto 20px;
 }
 .external_link_block .container .theme_block .theme_slider .slick-prev,
 .external_link_block .container .theme_block .theme_slider .slick-next {
@@ -9947,6 +9964,9 @@ body.fixed {
 .external_link_block .container .theme_block .theme_slider .themelist a:focus-visible:before {
   box-shadow: 0 0px 0px 2px #f06c0a inset;
 }
+.external_link_block .container .theme_block .more {
+  margin: 0em 2em 2em;
+}
 .external_link_block .container .quicklink_block {
   flex: 1 1 auto;
 }
@@ -9957,7 +9977,7 @@ body.fixed {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 0 0 40px;
+  margin: 0 60px 30px;
   padding: 0;
   list-style-type: disc;
 }
@@ -9974,6 +9994,19 @@ body.fixed {
 .external_link_block .container .quicklink_block ul li a:hover {
   color: #169779;
   text-decoration: underline;
+}
+@media (max-width: 1200px) {
+  .external_link_block .container .quicklink_block ul {
+    margin: 0 40px 30px;
+  }
+}
+@media (max-width: 480px) {
+  .external_link_block .container .quicklink_block ul {
+    display: block;
+  }
+}
+.external_link_block .container .quicklink_block .more {
+  margin: 0em 2em 1em;
 }
 
 .cp .pic {

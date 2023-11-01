@@ -212,6 +212,9 @@
 
   .announcement {
     position: relative;
+    @include screen('tablet') {
+      margin-bottom: 3em;
+    }
     .title {
       color: $primaryColor;
       font-size: 1.5rem;
@@ -306,6 +309,14 @@
   .container {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 900px) {
+      display: block;
+      .theme_block {
+        margin-right: 0 !important;
+        margin-bottom: 2em;
+      }
+    }
+
     .theme_block,
     .quicklink_block {
       background-color: #fff;
@@ -332,6 +343,9 @@
         }
       }
     }
+    .more {
+      text-align: right;
+    }
     // 主題
     .theme_block {
       flex: 0 0 auto;
@@ -339,7 +353,7 @@
       margin-right: 2em;
       .theme_slider {
         width: 70%;
-        margin: 0 auto 30px;
+        margin: 0 auto 20px;
         // 箭頭
         .slick-prev,
         .slick-next {
@@ -399,6 +413,9 @@
           }
         }
       }
+      .more {
+        margin: 0em 2em 2em;
+      }
     }
     // 快速連結
     .quicklink_block {
@@ -410,7 +427,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 0 0 0 40px;
+        margin: 0 60px 30px;
         padding: 0;
         list-style-type: disc;
 
@@ -428,6 +445,15 @@
             }
           }
         }
+        @media (max-width: 1200px) {
+          margin: 0 40px 30px;
+        }
+        @media (max-width: 480px) {
+          display: block;
+        }
+      }
+      .more {
+        margin: 0em 2em 1em;
       }
     }
   }
