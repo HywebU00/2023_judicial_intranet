@@ -25,26 +25,23 @@
         }
 
         .demo_wrap h1 {
-            display: block;
-            margin: 0px auto;
-            max-width: 300px;
-            float: left;
-            margin-right: 1em
-        }
+            color: #000;
+            letter-spacing: 0.1em;
+            font-size: 3em;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
 
-        @media screen and (max-width:545px) {
-            .demo_wrap h1 {
-                max-width: 100%;
-                float: none;
-                text-align: center
-            }
         }
 
         .demo_wrap h1 img {
-            width: 300px
+
+            width: 150px;
+            vertical-align: middle;
+            margin-right: .5em;
+
         }
-
-
 
         body {
             counter-reset: num;
@@ -65,9 +62,6 @@
             color: #ff5050
         }
 
-
-
-
         .num {
             width: 5%
         }
@@ -82,12 +76,10 @@
         table td {
             border: 1px solid #ddd;
 
-
         }
 
         table td a {
             height: auto;
-
             text-overflow: inherit;
         }
 
@@ -103,6 +95,7 @@
 
         .btn_grp {
             text-align: right;
+
         }
 
         @media screen and (max-width:545px) {
@@ -115,7 +108,9 @@
 
 <body>
     <div class="demo_wrap">
-        <h1><img src="version_blue/images/logo.png" alt=""></h1>
+        <h1>
+            <img src="version_gold/images/logo/00_logo_司法院.svg" alt="">院內網站
+        </h1>
         <div class="btn_grp">
             <a href="https://github.com/HywebU00/2023_judicial_intranet" class="btn">切版檔案請按此下載</a>
         </div>
