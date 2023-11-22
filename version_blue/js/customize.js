@@ -339,4 +339,11 @@ $(function () {
     $('.login_lightbox').fadeOut();
     $('body').removeClass('fixed');
   });
+
+  // innerpage
+  // if ($('.innerpage').find('.innerbanner').length > 0) {
+  //   $('.innerpage').addClass('hasbanner');
+  // }
+
+  $('.innerpage').has('.innerbanner').addClass('hasbanner');
 });

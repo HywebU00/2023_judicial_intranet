@@ -9607,7 +9607,9 @@ body.fixed {
 }
 
 .innerpage {
-  padding: 20px 0 4em;
+  padding-bottom: 2em;
+  padding-top: 20px;
+  min-height: 1000px;
 }
 @media screen and (max-width: 767px) {
   .innerpage {
@@ -9665,7 +9667,7 @@ body.fixed {
 .innerpage .center_block .incontentblock {
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.14) 0px 0px 30px;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 2em;
 }
 .innerpage .left_block {
@@ -9711,6 +9713,22 @@ body.fixed {
 
 .hidden {
   display: none;
+}
+
+.innerbanner {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  margin: 0 auto 20px;
+}
+@media screen and (max-width: 767px) {
+  .innerbanner {
+    display: none;
+  }
+}
+.innerbanner img {
+  width: 100%;
+  border-radius: 15px;
 }
 
 .more a {
@@ -11281,7 +11299,7 @@ body.fixed {
   margin-bottom: 1.5em;
   background: rgb(255, 255, 255);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.6040791317) 0%, rgb(255, 255, 255) 44%, rgb(207, 204, 197) 100%);
-  border-radius: 10px;
+  border-radius: 15px;
   border: 1px solid #fff;
   box-shadow: rgba(0, 0, 0, 0.14) 0px 0px 30px;
   padding: 1em;

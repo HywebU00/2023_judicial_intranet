@@ -188,11 +188,15 @@ body {
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
 .innerpage {
-  // background-color: #fff;
-  padding: 20px 0 4em;
+  padding-bottom: 2em;
+  padding-top: 20px;
+  min-height: 1000px;
   @include screen('mobile') {
     padding-top: 80px;
   }
+  // &.hasbanner {
+  //   padding-top: 0;
+  // }
   > .container {
     padding-left: 40px;
     padding-right: 30px;
@@ -244,7 +248,7 @@ body {
     .incontentblock {
       background-color: #fff;
       box-shadow: rgba(0, 0, 0, 0.14) 0px 0px 30px;
-      border-radius: 10px;
+      border-radius: 15px;
       padding: 2em;
     }
   }
@@ -292,4 +296,35 @@ body {
 
 .hidden {
   display: none;
+}
+.innerbanner {
+  // max-width: $container-max;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  margin: 0 auto 20px;
+
+  @include screen('mobile') {
+    display: none;
+  }
+  img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  // &:before {
+  //   display: inline-block;
+  //   content: '';
+  //   padding-top: calc(150 / 750) * 100%;
+  // }
+  // img {
+  //   display: block;
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   right: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   margin: auto;
+  // }
 }

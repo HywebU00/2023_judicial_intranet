@@ -271,5 +271,4 @@ $(function () {
     $('.login_lightbox').fadeOut();
     $('body').removeClass('fixed');
   });
-  //
 });

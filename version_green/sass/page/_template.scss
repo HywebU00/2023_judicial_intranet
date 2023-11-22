@@ -45,6 +45,7 @@ body {
   padding-right: 30px;
   margin: 0 auto;
   max-width: $container-max; //請看_variable.scss
+  // outline: 1px solid red;
   @include screen('mobile') {
     padding-left: 30px;
   }
@@ -73,7 +74,9 @@ body {
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
 .innerpage {
-  padding: 20px 0 2em;
+  padding-bottom: 2em;
+  padding-top: 20px;
+  min-height: 800px;
   @include screen('mobile') {
     padding-top: 80px;
   }
@@ -81,6 +84,7 @@ body {
     padding-left: 150px;
     padding-right: 30px;
     display: flex;
+    flex-wrap: wrap;
     @include screen('mobile') {
       padding-left: 30px;
     }
@@ -131,7 +135,7 @@ body {
     }
   }
   .center_block {
-    flex: none;
+    flex: 1 1 auto;
     flex-basis: 100%;
     max-width: 100%;
     .incontentblock {
@@ -142,7 +146,7 @@ body {
     }
   }
   .left_block {
-    flex: none;
+    flex: 0 0 auto;
     flex-basis: 210px;
     max-width: 210px;
     margin-right: 20px;
@@ -181,6 +185,22 @@ body {
       }
     }
   }
+  .innerbanner {
+    flex: 1 1 auto;
+    flex-basis: 100%;
+    display: block;
+    position: relative;
+    margin: 0 auto 20px;
+
+    @include screen('mobile') {
+      display: none;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
   h2.title {
     line-height: 1.25em;
     padding-bottom: 0.5em;
