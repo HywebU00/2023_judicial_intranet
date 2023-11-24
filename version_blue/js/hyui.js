@@ -944,13 +944,16 @@ $(function () {
     var menuLeft = $('.header .container').offset().left;
     var menuLi = $('.header .menu > ul > li');
     var windowWidth = $(window).outerWidth();
-    var menuLiLeft;
-    var leftWidth;
+    var layer = 0;
     menuLi.each(function () {
-      menuLiLeft = $(this).offset().left;
-      leftWidth = $(this).width() * $(this).find('ul').length;
+      var menuLiLeft = $(this).offset().left;
+      var leftWidth = $(this).width() * $(this).find('ul').last().parents('ul').length;
+
       menuLiLeft + leftWidth + menuLeft > windowWidth ? $(this).addClass('leftSlider') : $(this).removeClass('leftSlider');
     });
   }
   checkUlWidth();
+  $(window).on('resize', function () {
+    checkUlWidth();
+  });
 });
