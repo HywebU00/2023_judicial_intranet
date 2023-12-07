@@ -8466,6 +8466,7 @@ table.table_sprite tr:nth-child(even) {
   background: #fff;
   padding: 1em 0;
   clear: both;
+  margin-bottom: 2em;
 }
 .lightbox_slider_block h3 {
   font-size: 1.5em;
@@ -8522,7 +8523,7 @@ table.table_sprite tr:nth-child(even) {
   transition: 0.3s ease-out;
 }
 .lightbox_slider_block .slick-dots {
-  bottom: -60px;
+  bottom: -50px;
 }
 .lightbox_slider_block .slick-dots li {
   width: 10px;
