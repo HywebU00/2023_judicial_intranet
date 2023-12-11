@@ -347,3 +347,28 @@ $(function () {
 
   $('.innerpage').has('.innerbanner').addClass('hasbanner');
 });
+// 彈出訊息
+$(function () {
+  var popupStatus = false;
+  if ($('body').find('.pop_up_block').length > 0) {
+    popupStatus = true;
+  }
+  if (popupStatus == true) {
+    $('body').addClass('fixed');
+    $('.pop_up_block').addClass('goin');
+    $('.pop_up_block .closebtn').click(function () {
+      $('.pop_up_block').fadeOut();
+      $('body').removeClass('fixed');
+    });
+    $('.pop_up_block .overlay').click(function () {
+      $('.pop_up_block').fadeOut();
+      $('body').removeClass('fixed');
+    });
+    $('body').keydown(function (e) {
+      if (e.keyCode == 27) {
+        $('.pop_up_block').fadeOut();
+        $('body').removeClass('fixed');
+      }
+    });
+  }
+});
