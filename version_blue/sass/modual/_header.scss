@@ -395,7 +395,8 @@
         border: 1px solid transparent;
         box-shadow: none;
       }
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: $primaryColor;
         border: 1px solid $primaryColor;
         color: #fff;
@@ -406,7 +407,7 @@
       flex-basis: 100%;
       background-color: #fff;
       border-radius: 10px;
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
       border: 1px solid #e0e0e0;
       display: none;
       @include screen('mobile') {
@@ -422,11 +423,23 @@
           border-bottom: 1px solid #ddd;
           &:last-child {
             border: none;
+            a {
+              border-radius: 0 0 10px 10px;
+            }
+          }
+          &:first-child {
+            a {
+              border-radius: 10px 10px 0 0;
+            }
           }
           a {
             display: block;
             padding: 0.5em 0.8em;
             text-align: left;
+            &:hover {
+              background-color: $primaryColor;
+              color: #fff;
+            }
           }
         }
       }

@@ -3497,7 +3497,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
     box-shadow: none;
   }
 }
-.header .member_login_btn button.btn:hover {
+.header .member_login_btn button.btn:hover, .header .member_login_btn button.btn:focus {
   background-color: #141e53;
   border: 1px solid #141e53;
   color: #fff;
@@ -3507,7 +3507,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   flex-basis: 100%;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
   border: 1px solid #e0e0e0;
   display: none;
 }
@@ -3529,10 +3529,20 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 .header .member_login_btn .member_login_select ul li:last-child {
   border: none;
 }
+.header .member_login_btn .member_login_select ul li:last-child a {
+  border-radius: 0 0 10px 10px;
+}
+.header .member_login_btn .member_login_select ul li:first-child a {
+  border-radius: 10px 10px 0 0;
+}
 .header .member_login_btn .member_login_select ul li a {
   display: block;
   padding: 0.5em 0.8em;
   text-align: left;
+}
+.header .member_login_btn .member_login_select ul li a:hover {
+  background-color: #141e53;
+  color: #fff;
 }
 .header .login_lightbox {
   position: fixed;
