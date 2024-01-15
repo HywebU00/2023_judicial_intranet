@@ -324,10 +324,14 @@ $(function () {
   $('.conditional_searchbtn').click(function () {
     $('.conditional_searchblock').slideToggle();
   });
-
   // 會員登入
   $('.login_lightbox').hide();
   $('.member_login_btn button').click(function () {
+    $('.member_login_select').slideToggle('');
+  });
+  // FIDO登入
+  $('.login_lightbox').hide();
+  $('.member_login_btn .fido').click(function () {
     $('.login_lightbox').fadeIn('');
     $('body').addClass('fixed');
   });
@@ -339,7 +343,12 @@ $(function () {
     $('.login_lightbox').fadeOut();
     $('body').removeClass('fixed');
   });
-
+  $(document).on('touchend click', function (e) {
+    var container = $('.header .member_login_btn'); //點這些以外的區塊
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      $('.header .member_login_btn .member_login_select').slideUp(); //要被收起來的區塊
+    }
+  });
   // innerpage
   // if ($('.innerpage').find('.innerbanner').length > 0) {
   //   $('.innerpage').addClass('hasbanner');

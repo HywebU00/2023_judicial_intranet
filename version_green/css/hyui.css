@@ -3446,6 +3446,10 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   position: absolute;
   right: 30px;
   top: 2em;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
 }
 @media screen and (max-width: 767px) {
   .header .member_login_btn {
@@ -3453,9 +3457,12 @@ div.tag ul li a:hover, div.tag ul li a:focus {
     position: absolute;
     right: 0;
     top: 0;
+    width: 60px;
   }
 }
 .header .member_login_btn button.btn {
+  flex: 0 0 auto;
+  flex-basis: 100%;
   padding: 0.5em 1.5em 0.5em 1.5em;
   color: #222;
   border-radius: 50px;
@@ -3478,11 +3485,46 @@ div.tag ul li a:hover, div.tag ul li a:focus {
     border: 1px solid transparent;
     box-shadow: none;
   }
+  .header .member_login_btn button.btn:hover {
+    background-image: url("../images/icon_member_white.svg");
+  }
 }
 .header .member_login_btn button.btn:hover {
   background-color: #169779;
   border: 1px solid #169779;
   color: #fff;
+}
+.header .member_login_btn .member_login_select {
+  flex: 0 0 auto;
+  flex-basis: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 1px solid #e0e0e0;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .header .member_login_btn .member_login_select {
+    width: 100px;
+    position: absolute;
+    right: 0;
+  }
+}
+.header .member_login_btn .member_login_select ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.header .member_login_btn .member_login_select ul li {
+  border-bottom: 1px solid #ddd;
+}
+.header .member_login_btn .member_login_select ul li:last-child {
+  border: none;
+}
+.header .member_login_btn .member_login_select ul li a {
+  display: block;
+  padding: 0.5em 0.8em;
+  text-align: left;
 }
 .header .login_lightbox {
   position: fixed;

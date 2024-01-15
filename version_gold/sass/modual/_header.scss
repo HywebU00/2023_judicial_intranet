@@ -376,13 +376,20 @@
     position: absolute;
     right: 30px;
     top: 2em;
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
     @include screen('mobile') {
       display: block;
       position: absolute;
       right: 0;
       top: 0;
+      width: 60px;
     }
     button.btn {
+      flex: 0 0 auto;
+      flex-basis: 100%;
       padding: 0.5em 1.5em 0.5em 1.5em;
       color: $color-word;
       border-radius: 50px;
@@ -402,11 +409,44 @@
         background-color: transparent;
         border: 1px solid transparent;
         box-shadow: none;
+        &:hover {
+          background-image: url('../images/icon_member_white.svg');
+        }
       }
       &:hover {
         background-color: $primaryColor;
         border: 1px solid $primaryColor;
         color: #fff;
+      }
+    }
+    .member_login_select {
+      flex: 0 0 auto;
+      flex-basis: 100%;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      border: 1px solid #e0e0e0;
+      display: none;
+      @include screen('mobile') {
+        width: 100px;
+        position: absolute;
+        right: 0;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          border-bottom: 1px solid #ddd;
+          &:last-child {
+            border: none;
+          }
+          a {
+            display: block;
+            padding: 0.5em 0.8em;
+            text-align: left;
+          }
+        }
       }
     }
   }
