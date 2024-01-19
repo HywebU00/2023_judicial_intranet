@@ -111,7 +111,7 @@
       ul {
         display: none;
         overflow: visible;
-        width: 99%;
+        width: 220px;
         background: rgba(0, 0, 0, 0.8);
         padding: 0;
         z-index: 999999;
@@ -173,5 +173,57 @@
         }
       }
     }
+  }
+}
+
+.menuArrowDown,
+.menuArrowUp {
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 0, 0, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  position: fixed;
+  bottom: 5px;
+  z-index: 9999999;
+  margin: 0;
+  // opacity: 0;
+  transition: all 0.3s linear;
+
+  // &.active {
+  //   opacity: 1;
+  // }
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 6px;
+    display: block;
+    background: #fff;
+  }
+}
+
+.menuArrowDown {
+  &::before {
+    transform: rotate(45deg);
+    left: 4px;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    right: 4px;
+  }
+}
+
+.menuArrowUp {
+  &::before {
+    transform: rotate(45deg);
+    right: 4px;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    left: 4px;
   }
 }
