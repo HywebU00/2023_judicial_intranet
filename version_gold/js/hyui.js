@@ -348,12 +348,12 @@ $(function () {
           setTimeout(function () {
             _this.find('.menuArrowDown').remove();
             _this.find('.menuArrowUp').remove();
-            _this.children('ul').removeAttr('style');
+            // _this.children('ul').removeAttr('style');
             _this.removeClass('active');
 
-            _this.parent().siblings('ul').hide();
-            _this.children('ul').stop(true, false).fadeOut(1000);
-          }, 400);
+            _this.parent().siblings('ul').hide(600);
+            _this.children('ul').stop(true, false).fadeOut(400);
+          }, 200);
         },
       });
       $(window).on('scroll', function () {
