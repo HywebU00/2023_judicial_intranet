@@ -351,7 +351,7 @@ $(function () {
             _this.children('ul').removeAttr('style');
             _this.removeClass('active');
 
-            _this.parent().siblings('ul').hide();
+            _this.parent().siblings('ul').hide(600);
             _this.children('ul').stop(true, false).fadeOut(1000);
           }, 400);
         },
