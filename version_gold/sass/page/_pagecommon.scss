@@ -60,10 +60,11 @@
         flex-basis: 100%;
         position: relative;
         transition: 0.5s;
-        @include aspect-ratio(4, 3);
+        @include aspect-ratio(4, 2.92);
         border-radius: 10px 10px 0 0;
         img {
           transition: 0.5s;
+          object-fit: contain;
         }
       }
       .photocontent {

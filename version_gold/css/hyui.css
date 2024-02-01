@@ -11097,7 +11097,7 @@ body.fixed {
 .videolist_block .videolist a .pic:before {
   display: inline-block;
   content: "";
-  padding-top: 75%;
+  padding-top: 73%;
 }
 .photolist_block .photolist a .pic img,
 .photolist_block .videolist a .pic img,
@@ -11118,6 +11118,8 @@ body.fixed {
 .videolist_block .photolist a .pic img,
 .videolist_block .videolist a .pic img {
   transition: 0.5s;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .photolist_block .photolist a .photocontent,
 .photolist_block .videolist a .photocontent,
