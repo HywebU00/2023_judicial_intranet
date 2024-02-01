@@ -353,7 +353,7 @@ $(function () {
 
             _this.parent().siblings('ul').hide();
             _this.children('ul').stop(true, false).fadeOut(200);
-          }, 50);
+          }, 200);
         },
       });
       $(window).on('scroll', function () {
