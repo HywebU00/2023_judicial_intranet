@@ -352,7 +352,7 @@ $(function () {
             _this.removeClass('active');
 
             _this.parent().siblings('ul').hide(600);
-            _this.children('ul').stop(true, false).fadeOut(400);
+            _this.children('ul').stop(true, false).fadeOut(600);
           }, 200);
         },
       });
