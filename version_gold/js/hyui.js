@@ -352,8 +352,8 @@ $(function () {
             _this.removeClass('active');
 
             _this.parent().siblings('ul').hide();
-            _this.children('ul').stop(true, false).fadeOut(600);
-          }, 300);
+            _this.children('ul').stop(true, false).fadeOut(1000);
+          }, 400);
         },
       });
       $(window).on('scroll', function () {
