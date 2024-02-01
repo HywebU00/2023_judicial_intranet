@@ -54,7 +54,7 @@
       border-radius: 10px;
       font-size: 1.125em;
       box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 5px 0px;
-
+      padding: 10px;
       .pic {
         flex: 1 1 auto;
         flex-basis: 100%;
@@ -68,7 +68,7 @@
         }
       }
       .photocontent {
-        padding: 0.5em 1em 1em;
+        padding: 0.5em;
         .date {
           color: #666;
           margin: 0 0 0.5em;

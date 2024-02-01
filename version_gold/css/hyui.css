@@ -11079,6 +11079,7 @@ body.fixed {
   border-radius: 10px;
   font-size: 1.125em;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 5px 0px;
+  padding: 10px;
 }
 .photolist_block .photolist a .pic,
 .photolist_block .videolist a .pic,
@@ -11125,7 +11126,7 @@ body.fixed {
 .photolist_block .videolist a .photocontent,
 .videolist_block .photolist a .photocontent,
 .videolist_block .videolist a .photocontent {
-  padding: 0.5em 1em 1em;
+  padding: 0.5em;
 }
 .photolist_block .photolist a .photocontent .date,
 .photolist_block .videolist a .photocontent .date,
