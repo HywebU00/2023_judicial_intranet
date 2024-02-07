@@ -31,14 +31,23 @@ $(function () {
   /*-----------------------------------*/
   _body.prepend('<aside class="sidebar"><div class="m_area"><button type="button" class="sidebarClose">關閉</button></div><div class="menu_overlay"></div></aside>');
   $('header .container').prepend('<button type="button" class="sidebarCtrl">側欄選單</button><button type="button" class="searchCtrl">查詢</button>');
-  var menu_status = false,
-    _sidebar = $('.sidebar'),
-    _search = $('.search'),
-    _nav = $('.navigation'),
-    _sidebarClose = $('.sidebarClose'),
-    _sidebarCtrl = $('.sidebarCtrl'),
-    _overlay = $('.menu_overlay'),
-    _mArea = $('.m_area');
+  // var menu_status = false,
+  //   _sidebar = $('.sidebar'),
+  //   _search = $('.search'),
+  //   _nav = $('.navigation'),
+  //   _sidebarClose = $('.sidebarClose'),
+  //   _sidebarCtrl = $('.sidebarCtrl'),
+  //   _overlay = $('.menu_overlay'),
+  //   _mArea = $('.m_area');
+  let menu_status = false;
+  let _sidebar = $('.sidebar');
+  let _search = $('.search');
+  let _nav = $('.navigation');
+  let _sidebarClose = $('.sidebarClose');
+  let _sidebarCtrl = $('.sidebarCtrl');
+  let _overlay = $('.menu_overlay');
+  let _mArea = $('.m_area');
+
   _sidebarCtrl.append('<span></span><span></span><span></span>');
   // -------------------------------------------- 打開選單 function
   function showSidebar() {
@@ -74,6 +83,9 @@ $(function () {
       hideSidebar();
     });
   _overlay.off('mouseenter');
+  _sidebarClose.off().on('click', function () {
+    hideSidebar();
+  });
   // -------------------------------------------- 無障礙tab設定
   // -------------------------------------------- menu
   liHasChild.children('a').keyup(function (e) {
@@ -352,7 +364,7 @@ $(function () {
             _this.removeClass('active');
 
             _this.parent().siblings('ul').hide();
-            _this.children('ul').stop(true, false).fadeOut(800);
+            _this.children('ul').stop(true, false).fadeOut(500);
           }, 200);
         },
       });
