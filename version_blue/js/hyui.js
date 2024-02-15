@@ -284,7 +284,7 @@ $(function () {
           let ulHeight = $(this).children('ul').height();
           let ulWidth = $(this).children('ul').width();
 
-          let upCheck = false;
+          // let upCheck = false;
           $(this).children('ul').stop(true, false).fadeIn();
           $(this).addClass('active');
           let hasChildLi = $(this).parents('.hasChild').last();
@@ -300,7 +300,7 @@ $(function () {
           if (ulHeight + objectRect.top > _window.height() && !isObjectFullyVisible(this.querySelector('ul'))) {
             setTimeout(function () {
               _this.append(`<button class="menuArrowDown" style="left:${objectRect.left + ulWidth - 50}px"></button>`);
-              _this.append(`<button class="menuArrowUp" style="left:${objectRect.left + ulWidth - 75}px"></button>`);
+              _this.append(`<button class="menuArrowUp" style="left:${objectRect.left + ulWidth - 75}px;opacity:0"></button>`);
               let sliderHeight = 40;
 
               $('.menuArrowDown')
@@ -311,6 +311,7 @@ $(function () {
                   const topValue = parseInt(siblingsUl.css('top'));
                   const number = topValue || 0;
                   const lastItem = siblingsUl.children('li').last();
+                  $(this).siblings('.menuArrowUp').css('opacity', '1');
 
                   if ($(this).parent().parent().parent().is('.menu')) {
                     if (!isObjectVisibleT(lastItem) && !isObjectVisibleB(lastItem)) {
@@ -326,31 +327,29 @@ $(function () {
                     }
                   }
 
-                  upCheck = true;
+                  // upCheck = true;
                   // siblingsUl.css('top', `${Math.max(leftHeight, number - sliderHeight)}px`);
                 });
 
               $('.menuArrowUp')
                 .off()
                 .on('click', function () {
-                  if (upCheck) {
-                    const siblingsUl = $(this).siblings('ul');
-                    const topValue = parseInt(siblingsUl.css('top'));
-                    const maxHeight = $('.header .menu > ul').height();
-                    if ($(this).parent().parent().parent().is('.menu')) {
-                      if (topValue <= -maxHeight) {
-                        siblingsUl.css('top', `${topValue + sliderHeight}px`);
-                      } else {
-                        siblingsUl.css('top', `${maxHeight}px`);
-                        upCheck = false;
-                      }
+                  const siblingsUl = $(this).siblings('ul');
+                  const topValue = parseInt(siblingsUl.css('top'));
+                  const maxHeight = $('.header .menu > ul').height();
+                  if ($(this).parent().parent().parent().is('.menu')) {
+                    if (topValue <= -maxHeight) {
+                      siblingsUl.css('top', `${topValue + sliderHeight}px`);
                     } else {
-                      if (topValue > siblingsUl.height()) {
-                        siblingsUl.css('top', `${topValue + sliderHeight}px`);
-                      } else {
-                        siblingsUl.css('top', '0px');
-                        upCheck = false;
-                      }
+                      siblingsUl.css('top', `${maxHeight}px`);
+                      upCheck = false;
+                    }
+                  } else {
+                    if (topValue > siblingsUl.height()) {
+                      siblingsUl.css('top', `${topValue + sliderHeight}px`);
+                    } else {
+                      siblingsUl.css('top', '0px');
+                      upCheck = false;
                     }
                   }
                 });
