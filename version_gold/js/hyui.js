@@ -165,15 +165,7 @@ $(function () {
   _menu.clone().prependTo(_mArea);
   _megamenu.clone().prependTo(_mArea);
   _search.clone().prependTo(_body).removeClass('search').addClass('m_search');
-  // var liHasChild_level1 = $('aside .menu ul').children('li.hasChild'),
-  //   liHasChild_level2 = $('aside .menu ul ul').children('li.hasChild'),
-  //   liHasChild_level3 = $('aside .menu ul ul ul').children('li.hasChild'),
-  //   subMenuWidth = liHasChild.first().children('ul').outerWidth();
-  // // megamenu
-  // var liHasChild2_level1 = $('aside .megamenu ul').children('li.hasChild'),
-  //   liHasChild2_level2 = $('aside .megamenu ul ul').children('li.hasChild'),
-  //   liHasChild2_level3 = $('aside .megamenu ul ul ul').children('li.hasChild'),
-  //   subMenuWidth2 = liHasChild2.first().children('ul').outerWidth();
+
   // 切換PC/Mobile 選單
   function mobileMenu() {
     ww = _window.outerWidth();
@@ -480,6 +472,7 @@ $(function () {
     let isFullyVisible = objectTop + thisHeight <= windowHeight;
     return isFullyVisible;
   }
+
   // search設定
   var search_mode = false;
   var _searchCtrl = $('.searchCtrl');
