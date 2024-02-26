@@ -358,12 +358,10 @@ $(function () {
     $('.memberblock .membername a')
       .off()
       .on('click', function () {
-        if (ww > wwSmall) {
-          if ($('.memberlink').is(':visible')) {
-            $('.memberlink').stop().slideUp();
-          } else {
-            $('.memberlink').stop().slideDown();
-          }
+        if ($('.memberlink').is(':visible')) {
+          $('.memberlink').stop().slideUp();
+        } else {
+          $('.memberlink').stop().slideDown();
         }
       });
 

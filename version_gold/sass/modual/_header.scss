@@ -222,7 +222,7 @@
     align-items: flex-end;
     @extend %clearfix;
     position: relative;
-    z-index: 101;
+    z-index: 99;
     @include screen('mobile') {
       display: none;
     }
@@ -364,6 +364,43 @@
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             &:hover {
               background-color: $lightColor;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    // 舊內網
+    .websitelinkblock {
+      margin-right: 110px;
+      position: relative;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        li {
+          flex: 0 0 auto;
+          margin-left: 0.5em;
+
+          a {
+            display: block;
+            padding: 0.5em 1.25em;
+            color: $color-word;
+            border-radius: 50px;
+            background: #fff;
+            position: relative;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            font-size: 1.125em;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+            height: auto;
+            line-height: 1.5em;
+            font-weight: normal;
+            &:hover,
+            &:focus {
+              background-color: $secondaryColor;
+              border: 1px solid $secondaryColor;
               color: #fff;
             }
           }

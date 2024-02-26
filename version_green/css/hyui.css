@@ -3323,7 +3323,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   justify-content: flex-end;
   align-items: flex-end;
   position: relative;
-  z-index: 101;
+  z-index: 99;
 }
 @media screen and (max-width: 767px) {
   .header .navigation {
@@ -3440,6 +3440,40 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .header .navigation .memberblock .memberlink li a:hover {
   background-color: #169779;
+  color: #fff;
+}
+.header .navigation .websitelinkblock {
+  margin-right: 110px;
+  position: relative;
+}
+.header .navigation .websitelinkblock ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+.header .navigation .websitelinkblock ul li {
+  flex: 0 0 auto;
+  margin-left: 0.5em;
+}
+.header .navigation .websitelinkblock ul li a {
+  display: block;
+  padding: 0.5em 1.25em;
+  color: #222;
+  border-radius: 50px;
+  background: #fff;
+  position: relative;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-size: 1.125em;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  height: auto;
+  line-height: 1.5em;
+  font-weight: normal;
+}
+.header .navigation .websitelinkblock ul li a:hover, .header .navigation .websitelinkblock ul li a:focus {
+  background-color: #169779;
+  border: 1px solid #169779;
   color: #fff;
 }
 .header .member_login_btn {
@@ -3997,7 +4031,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   flex-basis: 100%;
   box-sizing: border-box;
   position: fixed;
-  z-index: 99;
+  z-index: 98;
   clear: both;
   background-color: #169779;
   border-radius: 0 30px 30px 0;
@@ -4892,6 +4926,43 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 .sidebar .navigation .language ul li a {
   border: none;
   background: rgba(0, 0, 0, 0.4);
+}
+.sidebar .navigation .websitelinkblock {
+  margin-right: 0;
+  position: relative;
+}
+.sidebar .navigation .websitelinkblock ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  display: block;
+}
+.sidebar .navigation .websitelinkblock ul li {
+  margin-bottom: 0.5em;
+}
+.sidebar .navigation .websitelinkblock ul li a {
+  display: block;
+  padding: 0.5em 1.25em;
+  color: #222;
+  border-radius: 50px;
+  background: #fff;
+  position: relative;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-size: 1.125em;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  height: auto;
+  line-height: 1.5em;
+  font-weight: normal;
+}
+.sidebar .navigation .websitelinkblock ul li a:before {
+  display: none;
+}
+.sidebar .navigation .websitelinkblock ul li a:hover, .sidebar .navigation .websitelinkblock ul li a:focus {
+  background-color: #f06c0a;
+  border: 1px solid #f06c0a;
+  color: #fff;
 }
 .sidebar button.sidebarClose {
   position: absolute;
