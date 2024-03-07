@@ -663,7 +663,7 @@
     text-shadow: 1px 1px 2px RGBA(0, 0, 0, 0.8);
   }
   .img-container {
-    @include aspect-ratio(16, 9);
+    @include aspect-ratio(3, 2);
     img {
       position: absolute;
       width: 100%;
@@ -672,7 +672,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
   p {

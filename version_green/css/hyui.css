@@ -8813,7 +8813,7 @@ table.table_sprite tr:nth-child(even) {
 .Syncing_slider .img-container:before {
   display: inline-block;
   content: "";
-  padding-top: 56.25%;
+  padding-top: 66.6666666667%;
 }
 .Syncing_slider .img-container img {
   display: block;
@@ -8834,8 +8834,8 @@ table.table_sprite tr:nth-child(even) {
   left: 0;
   right: 0;
   bottom: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .Syncing_slider p {
   position: absolute;
