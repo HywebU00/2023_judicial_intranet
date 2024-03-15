@@ -114,7 +114,7 @@
         }
       }
     }
-    $fileType: doc, docx, odt, xls, xlsx, csv, ods, ppt, pptx, odp, zip, txt, mov, mp3, jpg, wmv, mp4, pdf, other;
+    $fileType: doc, docx, odt, xls, xlsx, csv, ods, ppt, pptx, odp, zip, txt, mov, mp3, jpg, wmv, mp4, pdf, other, html, htm;
     @each $fileType in $fileType {
       span.file_#{$fileType} {
         a {
@@ -245,6 +245,16 @@
           &:hover,
           &:focus {
             background: darken(#430a1f, 10%);
+          }
+        }
+      }
+      &.file_html,
+      &.file_htm {
+        a {
+          background: #999;
+          &:hover,
+          &:focus {
+            background: darken(#999, 10%);
           }
         }
       }
