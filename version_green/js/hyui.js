@@ -332,7 +332,7 @@ $(function () {
         $('body').removeClass('fixed');
       });
 
-    $('.sidebar .hasChild a,.menu .hasChild a').on('click', function (e) {
+    $('.sidebar .hasChild > a,.menu .hasChild > a').on('click', function (e) {
       if (Boolean($(this).siblings('ul'))) {
         e.preventDefault();
         $(this).siblings('ul').stop().slideToggle();
