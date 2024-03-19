@@ -320,6 +320,7 @@ $(function () {
 
     // megamenu
     if (_megamenu.length > 0) {
+      $('.megamenu > ul > li > ul').hide();
       liHasChild2.off().on({
         mouseenter: function () {
           if (ww > wwSmall) {
