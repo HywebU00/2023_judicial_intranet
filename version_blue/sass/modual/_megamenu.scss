@@ -49,27 +49,33 @@
         white-space: nowrap;
         color: #fff;
         font-size: 1.313rem;
-      }
-      &.hasChild {
-        > a {
-          // &:after {
-          //   content: '';
-          //   display: inline-block;
-          //   margin-left: 0.5em;
-          //   vertical-align: middle;
-          //   border: 7px solid #fff;
-          //   border-color: #fff transparent transparent transparent;
-          //   margin-bottom: 0;
-          //   margin-top: 0.4em;
-          // }
+        position: relative;
+        &:after {
+          content: '';
+          display: inline-block;
+          margin-left: 0.5em;
+          vertical-align: middle;
+          width: 1px;
+          height: 1em;
+          position: absolute;
+          top: 0.5em;
+          right: 0;
+          background-color: rgba(255, 255, 255, 0.5);
         }
       }
+      // &.hasChild {
+      //   > a {
+      //   }
+      // }
       &:hover {
         > a {
           color: #fff;
+        }
+      }
+      &:last-child {
+        > a {
           &:after {
-            border: 7px solid #fff;
-            border-color: #fff transparent transparent transparent;
+            display: none;
           }
         }
       }
@@ -279,6 +285,7 @@
                 border-top: none;
                 border-left: none;
                 transition: 0.3s;
+                background-color: transparent;
               }
             }
           }
@@ -295,12 +302,13 @@
                 min-height: 1.5em;
                 line-height: 1.5em;
                 padding: 0.5em 1em 0.5em 2em !important;
-                background: #eee;
+                // background: #eee;
+                color: #fff;
 
                 &:hover,
                 &:focus {
-                  color: #000;
-                  background: #ccc;
+                  color: #fff;
+                  // background: #ccc;
                 }
               }
               &.hasChild {

@@ -4649,13 +4649,25 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   white-space: nowrap;
   color: #fff;
   font-size: 1.313rem;
+  position: relative;
+}
+.megamenu > ul > li > a:after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.5em;
+  vertical-align: middle;
+  width: 1px;
+  height: 1em;
+  position: absolute;
+  top: 0.5em;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .megamenu > ul > li:hover > a {
   color: #fff;
 }
-.megamenu > ul > li:hover > a:after {
-  border: 7px solid #fff;
-  border-color: #fff transparent transparent transparent;
+.megamenu > ul > li:last-child > a:after {
+  display: none;
 }
 .megamenu ul li a {
   display: block;
@@ -4846,6 +4858,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   border-top: none;
   border-left: none;
   transition: 0.3s;
+  background-color: transparent;
 }
 .sidebar .m_area .megamenu ul li ul {
   display: none;
@@ -4860,11 +4873,10 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   min-height: 1.5em;
   line-height: 1.5em;
   padding: 0.5em 1em 0.5em 2em !important;
-  background: #eee;
+  color: #fff;
 }
 .sidebar .m_area .megamenu ul li ul li a:hover, .sidebar .m_area .megamenu ul li ul li a:focus {
-  color: #000;
-  background: #ccc;
+  color: #fff;
 }
 .sidebar .m_area .megamenu ul li ul li.hasChild > a {
   background: #eee;
