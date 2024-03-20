@@ -4626,7 +4626,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .megamenu > ul {
   margin: 0;
-  padding: 0.8em 0;
+  padding: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -4642,8 +4642,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .megamenu > ul > li > a {
   display: block;
-  padding: 0 0em;
-  min-height: 2em;
+  padding: 0.6em 0em;
   text-align: center;
   line-height: 2em;
   white-space: nowrap;
@@ -4659,12 +4658,12 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   width: 1px;
   height: 1em;
   position: absolute;
-  top: 0.5em;
+  top: 1.2em;
   right: 0;
   background-color: rgba(255, 255, 255, 0.5);
 }
 .megamenu > ul > li:hover > a {
-  color: #fff;
+  background-color: #000;
 }
 .megamenu > ul > li:last-child > a:after {
   display: none;
@@ -4683,13 +4682,14 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   margin: 0;
   z-index: 999999;
   position: absolute;
-  top: auto;
+  top: 100%;
   left: 0;
   right: 0;
   list-style: none;
   text-align: left;
   align-items: flex-start;
   flex-wrap: wrap;
+  border-radius: 15px;
 }
 .megamenu ul li ul li {
   flex: none;

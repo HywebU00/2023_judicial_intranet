@@ -29,7 +29,7 @@
   // }
   > ul {
     margin: 0;
-    padding: 0.8em 0;
+    padding: 0;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -42,8 +42,8 @@
       }
       > a {
         display: block;
-        padding: 0 0em;
-        min-height: 2em;
+        padding: 0.6em 0em;
+        // min-height: 2em;
         text-align: center;
         line-height: 2em;
         white-space: nowrap;
@@ -58,18 +58,18 @@
           width: 1px;
           height: 1em;
           position: absolute;
-          top: 0.5em;
+          top: 1.2em;
           right: 0;
           background-color: rgba(255, 255, 255, 0.5);
         }
       }
-      // &.hasChild {
-      //   > a {
-      //   }
-      // }
+      &.hasChild {
+        > a {
+        }
+      }
       &:hover {
         > a {
-          color: #fff;
+          background-color: #000;
         }
       }
       &:last-child {
@@ -99,13 +99,14 @@
         margin: 0;
         z-index: 999999;
         position: absolute;
-        top: auto;
+        top: 100%;
         left: 0;
         right: 0;
         list-style: none;
         text-align: left;
         align-items: flex-start;
         flex-wrap: wrap;
+        border-radius: 15px;
 
         li {
           flex: none;
