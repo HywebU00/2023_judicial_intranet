@@ -4637,7 +4637,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 @media screen and (max-width: 991px) {
   .megamenu > ul > li {
-    flex: 0 1 16%;
+    flex: 0 1 12%;
   }
 }
 .megamenu > ul > li > a {
@@ -4649,6 +4649,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   color: #fff;
   font-size: 1.313rem;
   position: relative;
+  box-sizing: border-box;
 }
 .megamenu > ul > li > a:after {
   content: "";
@@ -4661,6 +4662,11 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   top: 1.2em;
   right: 0;
   background-color: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 991px) {
+  .megamenu > ul > li > a {
+    font-size: 1.25rem;
+  }
 }
 .megamenu > ul > li:hover > a {
   background-color: #000;
