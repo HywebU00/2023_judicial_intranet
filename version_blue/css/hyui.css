@@ -9830,7 +9830,7 @@ body.fixed {
 
 .serviceblock {
   background-color: #fff;
-  padding: 2em 0;
+  padding: 2em 0 0;
 }
 .serviceblock .container {
   position: relative;
@@ -10065,6 +10065,7 @@ body.fixed {
 }
 
 .announcementblock {
+  padding: 2em 0 0;
   position: relative;
 }
 .announcementblock:before {
@@ -10181,6 +10182,9 @@ body.fixed {
   }
 }
 
+.quicklink_block {
+  padding: 0 0 1em;
+}
 .quicklink_block .quicklink_Slider {
   background-color: #3b3f64;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

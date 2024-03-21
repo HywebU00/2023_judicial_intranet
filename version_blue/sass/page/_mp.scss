@@ -86,7 +86,7 @@
 // 常用服務
 .serviceblock {
   background-color: #fff;
-  padding: 2em 0;
+  padding: 2em 0 0;
   // outline: 1px solid red;
   .container {
     @include gutter(120px);
@@ -312,7 +312,9 @@
 }
 // 最新公告
 .announcementblock {
+  padding: 2em 0 0;
   position: relative;
+  // outline: 1px solid red;
   &:before {
     content: '';
     width: 100%;
@@ -416,6 +418,7 @@
 
 // 快速連結
 .quicklink_block {
+  padding: 0 0 1em;
   .quicklink_Slider {
     background-color: #3b3f64;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
