@@ -9600,6 +9600,13 @@ body.fixed {
   width: 100%;
   position: fixed;
 }
+body.grayscale {
+  /* IE */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+  /* Chrome, Safari */
+  /* Firefox */
+  filter: grayscale(1);
+}
 
 .wrapper {
   width: 100%;
