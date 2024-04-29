@@ -161,15 +161,16 @@ body {
     flex-basis: 210px;
     max-width: 210px;
     margin-right: 20px;
+
     &.hidden {
       + .center_block {
-        flex: none;
+        flex: 0 0 auto;
         flex-basis: 100%;
         max-width: 100%;
       }
     }
     + .center_block {
-      flex: auto;
+      flex: 0 0 auto;
       flex-basis: calc(100% - 230px);
       max-width: calc(100% - 230px);
     }

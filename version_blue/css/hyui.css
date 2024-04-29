@@ -9701,12 +9701,12 @@ body.grayscale {
   margin-right: 20px;
 }
 .innerpage .left_block.hidden + .center_block {
-  flex: none;
+  flex: 0 0 auto;
   flex-basis: 100%;
   max-width: 100%;
 }
 .innerpage .left_block + .center_block {
-  flex: auto;
+  flex: 0 0 auto;
   flex-basis: calc(100% - 230px);
   max-width: calc(100% - 230px);
 }
@@ -11840,7 +11840,9 @@ body.grayscale {
   .fatfooter,
   footer,
   .accesskey,
-  .submenu {
+  .submenu,
+  .main .left_block,
+  .function_panel {
     display: none;
   }
   /* -------------------------------各別顯示設定----//*/
@@ -11872,13 +11874,12 @@ body.grayscale {
   }
   .innerpage > .container {
     display: block !important;
+    padding: 0 !important;
   }
   .innerpage > .container .center_block {
     overflow: hidden;
-  }
-  .innerpage > .container .left_block {
-    float: left !important;
-    width: 260px !important;
+    flex-basis: 100%;
+    max-width: 100%;
   }
   .main,
   .content {
@@ -11894,6 +11895,7 @@ body.grayscale {
     clear: both;
     zoom: 1;
     padding-top: 0px !important;
+    /* 檔案下載*/
   }
   .main:before, .main:after,
   .content:before,
@@ -11949,58 +11951,73 @@ body.grayscale {
   }
   .main table,
   .content table {
-    background: #FFF;
+    background: #fff;
   }
   .main li,
   .content li {
     content: "» ";
   }
-  /* 檔案下載*/
-  .file_download a {
+  .main .file_download a,
+  .content .file_download a {
     display: block !important;
     clear: both !important;
     width: 100% !important;
   }
-  .file_download .update,
-  .file_download .file_view {
+  .main .file_download .update,
+  .main .file_download .file_view,
+  .content .file_download .update,
+  .content .file_download .file_view {
     float: none !important;
     width: 30% !important;
     display: inline-block !important;
     margin-left: 3em;
   }
-  *,
-  *:before,
-  *:after,
-  *:first-letter,
-  p:first-line,
-  div:first-line,
-  blockquote:first-line,
-  li:first-line {
+  .main *,
+  .main *:before,
+  .main *:after,
+  .main *:first-letter,
+  .main p:first-line,
+  .main div:first-line,
+  .main blockquote:first-line,
+  .main li:first-line,
+  .content *,
+  .content *:before,
+  .content *:after,
+  .content *:first-letter,
+  .content p:first-line,
+  .content div:first-line,
+  .content blockquote:first-line,
+  .content li:first-line {
     background: transparent !important;
     color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
-  thead {
+  .main thead,
+  .content thead {
     display: table-header-group;
     /* 表格即使分頁也會顯示表頭 */
   }
-  .lightbox_slider {
+  .main .lightbox_slider,
+  .content .lightbox_slider {
     page-break-inside: avoid;
     overflow: hidden;
     height: 6cm;
   }
-  .lightbox_slider .cp_slider {
+  .main .lightbox_slider .cp_slider,
+  .content .lightbox_slider .cp_slider {
     text-align: center;
   }
-  .lightbox_slider .cp_slider .slick-slide {
+  .main .lightbox_slider .cp_slider .slick-slide,
+  .content .lightbox_slider .cp_slider .slick-slide {
     width: 30%;
     height: 4cm;
     display: inline-block;
-    background: #DEDEDE;
+    background: #dedede;
     position: relative;
   }
-  .lightbox_slider .cp_slider .slick-slide:before {
+  .main .lightbox_slider .cp_slider .slick-slide:before,
+  .content .lightbox_slider .cp_slider .slick-slide:before {
     content: "";
     position: absolute;
     top: 0;
@@ -12011,7 +12028,8 @@ body.grayscale {
     height: 100%;
     box-shadow: 0px 0px 0px 1px #ccc;
   }
-  .lightbox_slider .cp_slider .slick-slide img {
+  .main .lightbox_slider .cp_slider .slick-slide img,
+  .content .lightbox_slider .cp_slider .slick-slide img {
     width: auto;
     height: auto;
     max-width: 100%;
