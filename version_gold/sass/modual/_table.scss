@@ -57,6 +57,9 @@ table {
     &.download {
       width: 135px;
     }
+    &.date {
+      width: 100px;
+    }
   }
   th {
     background-color: #f3f3f3;
@@ -153,7 +156,9 @@ table {
       &.download {
         width: auto;
       }
-
+      &.date {
+        width: auto;
+      }
       .file_download {
         margin: 0;
         ul {

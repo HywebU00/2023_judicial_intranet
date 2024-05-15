@@ -7410,6 +7410,9 @@ table td.aCenter, table td.date {
 table td.download {
   width: 135px;
 }
+table td.date {
+  width: 100px;
+}
 table th {
   background-color: #f3f3f3;
   color: #333;
@@ -7491,6 +7494,9 @@ table.table_sprite tr:nth-child(even) {
     text-align: left;
   }
   .table_list td.download {
+    width: auto;
+  }
+  .table_list td.date {
     width: auto;
   }
   .table_list td .file_download {
@@ -10079,12 +10085,12 @@ body.grayscale {
   position: relative;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
-  padding: 40px 40px 0;
+  padding: 10px 20px 0;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 @media screen and (max-width: 991px) {
   .announcementblock .announcement {
-    padding: 30px;
+    padding: 10px 20px;
   }
 }
 .announcementblock .announcement .title {
