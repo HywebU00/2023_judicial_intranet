@@ -9551,6 +9551,7 @@ body.grayscale {
   position: relative;
   margin: 0 auto;
   padding: 20px 0 0;
+  min-height: 750px;
 }
 @media screen and (max-width: 767px) {
   .main {

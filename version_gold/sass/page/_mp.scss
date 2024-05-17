@@ -185,7 +185,7 @@
 // 最新公告
 .announcementblock {
   margin-bottom: 0em;
-
+  min-height: 650px;
   @include screen('tablet') {
     margin-bottom: 1em;
   }

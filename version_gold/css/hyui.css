@@ -10075,6 +10075,7 @@ body.grayscale {
 
 .announcementblock {
   margin-bottom: 0em;
+  min-height: 650px;
 }
 @media screen and (max-width: 991px) {
   .announcementblock {
