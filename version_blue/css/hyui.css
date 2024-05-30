@@ -4708,6 +4708,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   color: #fff;
   font-weight: bold;
   box-sizing: border-box;
+  font-size: 1.188rem;
 }
 .megamenu ul li ul li a:hover, .megamenu ul li ul li a:focus {
   background: #1f5072;
