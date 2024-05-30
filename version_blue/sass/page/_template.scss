@@ -76,7 +76,7 @@ body {
   // background-color: #fff;
   // 可先設定一個中央區塊最大寬，限制accesskey對齊
   @include screen('mobile') {
-    padding-top: 80px;
+    padding-top: 60px;
   }
   h2 {
     line-height: 1.25em;

@@ -4688,7 +4688,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   margin: 0;
   z-index: 999999;
   position: absolute;
-  top: 100%;
+  top: auto;
   left: 0;
   right: 0;
   list-style: none;
@@ -9615,7 +9615,7 @@ body.grayscale {
 }
 @media screen and (max-width: 767px) {
   .main {
-    padding-top: 80px;
+    padding-top: 60px;
   }
 }
 .main h2 {

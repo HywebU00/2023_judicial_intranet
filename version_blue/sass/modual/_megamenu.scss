@@ -103,7 +103,7 @@
         margin: 0;
         z-index: 999999;
         position: absolute;
-        top: 100%;
+        top: auto;
         left: 0;
         right: 0;
         list-style: none;
@@ -302,6 +302,7 @@
             padding: 0;
             background-color: transparent;
             font-size: 0.938em;
+
             li {
               a {
                 display: block;
