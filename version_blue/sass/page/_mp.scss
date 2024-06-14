@@ -383,6 +383,8 @@
           border-bottom: #fff 1px solid;
           word-break: break-all;
           padding: 14px;
+          position: relative;
+
           a {
             padding-left: 1.5em;
             @include text-line(1, 1.6em);
@@ -394,7 +396,86 @@
               border-radius: 50%;
               position: absolute;
               left: 0.5em;
-              top: 10px;
+              top: 11px;
+            }
+          }
+          &.addnew {
+            a {
+              padding-left: 3em;
+              &:after {
+                content: 'NEW';
+                width: 3em;
+                height: 1.5em;
+                line-height: 1.5em;
+                text-align: center;
+                position: absolute;
+                top: 4px;
+                left: 0.5em;
+                border: none;
+                background-color: $color-red;
+                color: #fff;
+                font-size: 0.813rem;
+                padding: 0;
+                border-radius: 3px;
+              }
+            }
+          }
+          &.addtop {
+            a {
+              padding-left: 3em;
+              &:after {
+                content: 'TOP';
+                width: 3em;
+                height: 1.5em;
+                line-height: 1.5em;
+                text-align: center;
+                position: absolute;
+                top: 4px;
+                left: 0.5em;
+                border: none;
+                background-color: $color-green;
+                color: #fff;
+                font-size: 0.813rem;
+                padding: 0;
+                border-radius: 3px;
+              }
+            }
+          }
+          &.addnewtop {
+            a {
+              padding-left: 5.5em;
+              &:before {
+                content: 'NEW';
+                width: 3em;
+                height: 1.5em;
+                line-height: 1.5em;
+                text-align: center;
+                position: absolute;
+                top: 4px;
+                left: 0.5em;
+                border: none;
+                background-color: $color-red;
+                color: #fff;
+                font-size: 0.813rem;
+                padding: 0;
+                border-radius: 3px;
+              }
+              &:after {
+                content: 'TOP';
+                width: 3em;
+                height: 1.5em;
+                line-height: 1.5em;
+                text-align: center;
+                position: absolute;
+                top: 4px;
+                left: 4em;
+                border: none;
+                background-color: $color-green;
+                color: #fff;
+                font-size: 0.813rem;
+                padding: 0;
+                border-radius: 3px;
+              }
             }
           }
           @include screen('xs_mobile') {

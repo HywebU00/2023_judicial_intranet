@@ -7673,6 +7673,89 @@ table.table_sprite tr:nth-child(even) {
 .lp .list ol > li .tag {
   margin-left: 2em;
 }
+.lp .list > ul > li.addnew .title,
+.lp .list ol > li.addnew .title {
+  padding-left: 2.5em;
+  position: relative;
+}
+.lp .list > ul > li.addnew .title:after,
+.lp .list ol > li.addnew .title:after {
+  content: "NEW";
+  width: 3em;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  position: absolute;
+  top: 4px;
+  left: 0em;
+  border: none;
+  background-color: #d30000;
+  color: #fff;
+  font-size: 0.813rem;
+  padding: 0;
+  border-radius: 3px;
+}
+.lp .list > ul > li.addtop .title,
+.lp .list ol > li.addtop .title {
+  padding-left: 2.5em;
+  position: relative;
+}
+.lp .list > ul > li.addtop .title:after,
+.lp .list ol > li.addtop .title:after {
+  content: "TOP";
+  width: 3em;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  border: none;
+  background-color: #298729;
+  color: #fff;
+  font-size: 0.813rem;
+  padding: 0;
+  border-radius: 3px;
+}
+.lp .list > ul > li.addnewtop .title,
+.lp .list ol > li.addnewtop .title {
+  padding-left: 5em;
+  position: relative;
+}
+.lp .list > ul > li.addnewtop .title:before,
+.lp .list ol > li.addnewtop .title:before {
+  content: "NEW";
+  width: 3em;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  border: none;
+  background-color: #d30000;
+  color: #fff;
+  font-size: 0.813rem;
+  padding: 0;
+  border-radius: 3px;
+}
+.lp .list > ul > li.addnewtop .title:after,
+.lp .list ol > li.addnewtop .title:after {
+  content: "TOP";
+  width: 3em;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  position: absolute;
+  top: 4px;
+  left: 3.5em;
+  border: none;
+  background-color: #298729;
+  color: #fff;
+  font-size: 0.813rem;
+  padding: 0;
+  border-radius: 3px;
+}
 .lp .list > ul > li > a,
 .lp .list ol > li > a {
   display: flex;
@@ -9975,6 +10058,79 @@ body.grayscale {
   position: absolute;
   left: 0.5em;
   top: 10px;
+}
+.announcementblock .announcement .announcement_tabs table td.addnew a {
+  padding-left: 3em;
+}
+.announcementblock .announcement .announcement_tabs table td.addnew a:after {
+  content: "NEW";
+  width: 3em;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  position: absolute;
+  top: 4px;
+  left: 0.5em;
+  border: none;
+  background-color: #d30000;
+  color: #fff;
+  font-size: 0.813rem;
+  padding: 0;
+  border-radius: 3px;
+}
+.announcementblock .announcement .announcement_tabs table td.addtop a {
+  padding-left: 3em;
+}
+.announcementblock .announcement .announcement_tabs table td.addtop a:after {
+  content: "TOP";
+  width: 3em;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  position: absolute;
+  top: 4px;
+  left: 0.5em;
+  border: none;
+  background-color: #298729;
+  color: #fff;
+  font-size: 0.813rem;
+  padding: 0;
+  border-radius: 3px;
+}
+.announcementblock .announcement .announcement_tabs table td.addnewtop a {
+  padding-left: 5.5em;
+}
+.announcementblock .announcement .announcement_tabs table td.addnewtop a:before {
+  content: "NEW";
+  width: 3em;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  position: absolute;
+  top: 4px;
+  left: 0.5em;
+  border: none;
+  background-color: #d30000;
+  color: #fff;
+  font-size: 0.813rem;
+  padding: 0;
+  border-radius: 3px;
+}
+.announcementblock .announcement .announcement_tabs table td.addnewtop a:after {
+  content: "TOP";
+  width: 3em;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  position: absolute;
+  top: 4px;
+  left: 4em;
+  border: none;
+  background-color: #298729;
+  color: #fff;
+  font-size: 0.813rem;
+  padding: 0;
+  border-radius: 3px;
 }
 @media screen and (max-width: 575px) {
   .announcementblock .announcement .announcement_tabs table td a {
