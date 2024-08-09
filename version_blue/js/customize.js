@@ -115,13 +115,14 @@ $(function () {
   });
   //
   $('.cppic_slider').slick({
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 1500,
+    arrows: true,
     // pauseOnHover: true,
     // pauseOnFocus: true,
     // focusOnSelect: true,
@@ -134,14 +135,11 @@ $(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          infinite: true,
-          dots: true,
         },
       },
       {
         breakpoint: 545,
         settings: {
-          arrows: true,
           slidesToShow: 2,
           slidesToScroll: 2,
         },
@@ -149,10 +147,8 @@ $(function () {
       {
         breakpoint: 480,
         settings: {
-          arrows: true,
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: false,
         },
       },
     ],
