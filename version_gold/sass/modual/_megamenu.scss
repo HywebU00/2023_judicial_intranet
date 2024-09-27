@@ -84,7 +84,7 @@
       }
       &:hover {
         > a {
-          background-color: #000;
+          background: rgb(77, 57, 32, 0.95);
         }
       }
       &:last-child {
@@ -109,7 +109,7 @@
         display: flex;
         overflow: visible;
         width: 100%;
-        background: rgba(0, 0, 0, 0.9);
+        background: rgb(77, 57, 32, 0.95);
         padding: 25px 15px;
         margin: 0;
         z-index: 999999;

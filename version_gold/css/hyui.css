@@ -4713,7 +4713,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   }
 }
 .megamenu > ul > li:hover > a {
-  background-color: #000;
+  background: rgba(77, 57, 32, 0.95);
 }
 .megamenu > ul > li:last-child > a:after {
   display: none;
@@ -4727,7 +4727,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   display: flex;
   overflow: visible;
   width: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(77, 57, 32, 0.95);
   padding: 25px 15px;
   margin: 0;
   z-index: 999999;
