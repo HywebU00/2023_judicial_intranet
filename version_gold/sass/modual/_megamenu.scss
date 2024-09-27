@@ -1,9 +1,40 @@
 .megamenu {
+  flex: 1 1 auto;
+  flex-basis: 100%;
   box-sizing: border-box;
   position: relative;
-  z-index: 99;
-  // 預設選單 ul
+  z-index: 98;
   clear: both;
+  background-image: linear-gradient(180deg, #896936, #c4964d);
+  border-radius: 15px;
+  margin: 2em 0 0;
+  border: 1px solid #fff;
+  box-shadow: #ededed 0px 0px 20px;
+  // &.sticky {
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   z-index: 999;
+  //   background-color: #fff;
+  //   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  //   margin: 0;
+  //   border-radius: 0;
+  //   &:after {
+  //     position: absolute;
+  //     content: '';
+  //     width: 100%;
+  //     height: 100%;
+  //     top: 0;
+  //     left: 0;
+  //     z-index: -1;
+  //   }
+  //   & > ul {
+  //     width: 100%;
+  //     max-width: $container-max;
+  //     margin: 0 auto;
+  //   }
+  // }
   @include screen('mobile') {
     display: none;
   }
@@ -13,41 +44,53 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     // 第一層選單樣式
     > li {
-      flex: 0 1 calc(100% / 6);
+      flex: 0 1 12%;
+      @include screen('tablet') {
+        flex: 0 1 12%;
+      }
       > a {
         display: block;
-        padding: 0 1em;
-        min-height: 2.5em;
-        font-weight: bold;
-        line-height: 2.5em;
-        color: $color-word;
+        padding: 0.6em 0em;
+        // min-height: 2em;
+        text-align: center;
+        line-height: 2em;
+        white-space: nowrap;
+        color: #fff;
+        font-size: 1.313rem;
+        position: relative;
+        box-sizing: border-box;
+        &:after {
+          content: '';
+          display: inline-block;
+          margin-left: 0.5em;
+          vertical-align: middle;
+          width: 1px;
+          height: 1em;
+          position: absolute;
+          top: 1.2em;
+          right: 0;
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+        @include screen('tablet') {
+          font-size: 1.25rem;
+        }
       }
       &.hasChild {
         > a {
-          &:after {
-            content: '';
-            width: 4px;
-            height: 4px;
-            display: inline-block;
-            margin-left: 0.5em;
-            vertical-align: middle;
-            border: 2px solid lighten($color-word, 40);
-            transform: rotate(135deg);
-            border-bottom: none;
-            border-left: none;
-            margin-bottom: 0.2em;
-          }
         }
       }
       &:hover {
         > a {
-          color: $aHover;
+          background-color: #000;
+        }
+      }
+      &:last-child {
+        > a {
           &:after {
-            border: 2px solid $aHover;
-            border-bottom: none;
-            border-left: none;
+            display: none;
           }
         }
       }
@@ -62,12 +105,12 @@
       }
       // 第二層選單樣式
       ul {
-        // display: none;
+        //  display: none;
         display: flex;
         overflow: visible;
         width: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        padding: 15px;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 25px 15px;
         margin: 0;
         z-index: 999999;
         position: absolute;
@@ -78,6 +121,7 @@
         text-align: left;
         align-items: flex-start;
         flex-wrap: wrap;
+        border-radius: 15px;
         li {
           flex: none;
           flex-basis: 23%;
@@ -88,9 +132,10 @@
             color: #fff;
             font-weight: bold;
             box-sizing: border-box;
+            font-size: 1.188rem;
             &:hover,
             &:focus {
-              background: $aHover;
+              background: $secondaryColor;
             }
           }
           // 第三層選單樣式

@@ -197,7 +197,7 @@ $(function () {
   }
   function mobileMenu() {
     //手機版第第一層點了不會進入內頁，拿掉第一層的連結無作用
-    $('.sidebar .menu li a')
+    $('.sidebar .menu li a, .sidebar .megamenu li a')
       .off()
       .on('click', function (e) {
         if (ww < wwSmall) {
@@ -319,6 +319,7 @@ $(function () {
 
     // megamenu
     if (_megamenu.length > 0) {
+      $('.megamenu > ul > li > ul').hide();
       liHasChild2.off().on({
         mouseenter: function () {
           if (ww > wwSmall) {
