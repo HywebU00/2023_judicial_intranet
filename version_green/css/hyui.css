@@ -11056,14 +11056,314 @@ body.grayscale {
   top: 0;
   right: 0;
 }
+.file_download li span.file_odf a {
+  color: #fff;
+  font-weight: bold;
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+  font-size: 0.625rem;
+  width: 30px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.file_download li span.file_odf a:hover, .file_download li span.file_odf a:focus {
+  color: #fff;
+}
+.file_download li span.file_odf a:after {
+  content: "";
+  border: 4px solid #b1b7bc;
+  border-color: #fff #fff rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.file_download li span.file_tif a {
+  color: #fff;
+  font-weight: bold;
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+  font-size: 0.625rem;
+  width: 30px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.file_download li span.file_tif a:hover, .file_download li span.file_tif a:focus {
+  color: #fff;
+}
+.file_download li span.file_tif a:after {
+  content: "";
+  border: 4px solid #b1b7bc;
+  border-color: #fff #fff rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.file_download li span.file_wma a {
+  color: #fff;
+  font-weight: bold;
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+  font-size: 0.625rem;
+  width: 30px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.file_download li span.file_wma a:hover, .file_download li span.file_wma a:focus {
+  color: #fff;
+}
+.file_download li span.file_wma a:after {
+  content: "";
+  border: 4px solid #b1b7bc;
+  border-color: #fff #fff rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.file_download li span.file_avi a {
+  color: #fff;
+  font-weight: bold;
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+  font-size: 0.625rem;
+  width: 30px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.file_download li span.file_avi a:hover, .file_download li span.file_avi a:focus {
+  color: #fff;
+}
+.file_download li span.file_avi a:after {
+  content: "";
+  border: 4px solid #b1b7bc;
+  border-color: #fff #fff rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.file_download li span.file_flv a {
+  color: #fff;
+  font-weight: bold;
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+  font-size: 0.625rem;
+  width: 30px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.file_download li span.file_flv a:hover, .file_download li span.file_flv a:focus {
+  color: #fff;
+}
+.file_download li span.file_flv a:after {
+  content: "";
+  border: 4px solid #b1b7bc;
+  border-color: #fff #fff rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.file_download li span.file_swf a {
+  color: #fff;
+  font-weight: bold;
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+  font-size: 0.625rem;
+  width: 30px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.file_download li span.file_swf a:hover, .file_download li span.file_swf a:focus {
+  color: #fff;
+}
+.file_download li span.file_swf a:after {
+  content: "";
+  border: 4px solid #b1b7bc;
+  border-color: #fff #fff rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.file_download li span.file_ai a {
+  color: #fff;
+  font-weight: bold;
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+  font-size: 0.625rem;
+  width: 30px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.file_download li span.file_ai a:hover, .file_download li span.file_ai a:focus {
+  color: #fff;
+}
+.file_download li span.file_ai a:after {
+  content: "";
+  border: 4px solid #b1b7bc;
+  border-color: #fff #fff rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.file_download li span.file_xml a {
+  color: #fff;
+  font-weight: bold;
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+  font-size: 0.625rem;
+  width: 30px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.file_download li span.file_xml a:hover, .file_download li span.file_xml a:focus {
+  color: #fff;
+}
+.file_download li span.file_xml a:after {
+  content: "";
+  border: 4px solid #b1b7bc;
+  border-color: #fff #fff rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.file_download li span.file_epub a {
+  color: #fff;
+  font-weight: bold;
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+  font-size: 0.625rem;
+  width: 30px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.file_download li span.file_epub a:hover, .file_download li span.file_epub a:focus {
+  color: #fff;
+}
+.file_download li span.file_epub a:after {
+  content: "";
+  border: 4px solid #b1b7bc;
+  border-color: #fff #fff rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.file_download li span.file_7z a {
+  color: #fff;
+  font-weight: bold;
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+  font-size: 0.625rem;
+  width: 30px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.file_download li span.file_7z a:hover, .file_download li span.file_7z a:focus {
+  color: #fff;
+}
+.file_download li span.file_7z a:after {
+  content: "";
+  border: 4px solid #b1b7bc;
+  border-color: #fff #fff rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.file_download li span.file_rar a {
+  color: #fff;
+  font-weight: bold;
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+  font-size: 0.625rem;
+  width: 30px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.file_download li span.file_rar a:hover, .file_download li span.file_rar a:focus {
+  color: #fff;
+}
+.file_download li span.file_rar a:after {
+  content: "";
+  border: 4px solid #b1b7bc;
+  border-color: #fff #fff rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.file_download li span.file_svg a {
+  color: #fff;
+  font-weight: bold;
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+  font-size: 0.625rem;
+  width: 30px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.file_download li span.file_svg a:hover, .file_download li span.file_svg a:focus {
+  color: #fff;
+}
+.file_download li span.file_svg a:after {
+  content: "";
+  border: 4px solid #b1b7bc;
+  border-color: #fff #fff rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 .file_download li span {
   display: flex;
   align-items: center;
 }
-.file_download li span.file_doc a, .file_download li span.file_docx a, .file_download li span.file_odt a {
+.file_download li span.file_doc a, .file_download li span.file_docx a, .file_download li span.file_odt a, .file_download li span.file_odf a {
   background: #275cb7;
 }
-.file_download li span.file_doc a:hover, .file_download li span.file_doc a:focus, .file_download li span.file_docx a:hover, .file_download li span.file_docx a:focus, .file_download li span.file_odt a:hover, .file_download li span.file_odt a:focus {
+.file_download li span.file_doc a:hover, .file_download li span.file_doc a:focus, .file_download li span.file_docx a:hover, .file_download li span.file_docx a:focus, .file_download li span.file_odt a:hover, .file_download li span.file_odt a:focus, .file_download li span.file_odf a:hover, .file_download li span.file_odf a:focus {
   background: #1e478d;
 }
 .file_download li span.file_xls a, .file_download li span.file_xlsx a, .file_download li span.file_csv a, .file_download li span.file_ods a {
@@ -11078,16 +11378,16 @@ body.grayscale {
 .file_download li span.file_ppt a:hover, .file_download li span.file_ppt a:focus, .file_download li span.file_pptx a:hover, .file_download li span.file_pptx a:focus, .file_download li span.file_odp a:hover, .file_download li span.file_odp a:focus, .file_download li span.file_pdf a:hover, .file_download li span.file_pdf a:focus {
   background: #9e482f;
 }
-.file_download li span.file_pdf a {
+.file_download li span.file_pdf a, .file_download li span.file_epub a {
   background: #c00;
 }
-.file_download li span.file_pdf a:hover, .file_download li span.file_pdf a:focus {
+.file_download li span.file_pdf a:hover, .file_download li span.file_pdf a:focus, .file_download li span.file_epub a:hover, .file_download li span.file_epub a:focus {
   background: #990000;
 }
-.file_download li span.file_zip a {
+.file_download li span.file_zip a, .file_download li span.file_7z a, .file_download li span.file_rar a {
   background: #eb712e;
 }
-.file_download li span.file_zip a:hover, .file_download li span.file_zip a:focus {
+.file_download li span.file_zip a:hover, .file_download li span.file_zip a:focus, .file_download li span.file_7z a:hover, .file_download li span.file_7z a:focus, .file_download li span.file_rar a:hover, .file_download li span.file_rar a:focus {
   background: #d25714;
 }
 .file_download li span.file_txt a, .file_download li span.file_other a {
@@ -11108,22 +11408,22 @@ body.grayscale {
 .file_download li span.file_mp3 a:hover, .file_download li span.file_mp3 a:focus, .file_download li span.file_mp4 a:hover, .file_download li span.file_mp4 a:focus {
   background: #066c9b;
 }
-.file_download li span.file_jpg a {
+.file_download li span.file_jpg a, .file_download li span.file_tif a, .file_download li span.file_ai a, .file_download li span.file_svg a {
   background: #6c29a4;
 }
-.file_download li span.file_jpg a:hover, .file_download li span.file_jpg a:focus {
+.file_download li span.file_jpg a:hover, .file_download li span.file_jpg a:focus, .file_download li span.file_tif a:hover, .file_download li span.file_tif a:focus, .file_download li span.file_ai a:hover, .file_download li span.file_ai a:focus, .file_download li span.file_svg a:hover, .file_download li span.file_svg a:focus {
   background: #511f7b;
 }
-.file_download li span.file_wmv a {
+.file_download li span.file_wmv a, .file_download li span.file_wma a, .file_download li span.file_avi a, .file_download li span.file_flv a, .file_download li span.file_swf a {
   background: #430a1f;
 }
-.file_download li span.file_wmv a:hover, .file_download li span.file_wmv a:focus {
+.file_download li span.file_wmv a:hover, .file_download li span.file_wmv a:focus, .file_download li span.file_wma a:hover, .file_download li span.file_wma a:focus, .file_download li span.file_avi a:hover, .file_download li span.file_avi a:focus, .file_download li span.file_flv a:hover, .file_download li span.file_flv a:focus, .file_download li span.file_swf a:hover, .file_download li span.file_swf a:focus {
   background: #17030a;
 }
-.file_download li span.file_html a, .file_download li span.file_htm a {
+.file_download li span.file_html a, .file_download li span.file_htm a, .file_download li span.file_xml a {
   background: #999;
 }
-.file_download li span.file_html a:hover, .file_download li span.file_html a:focus, .file_download li span.file_htm a:hover, .file_download li span.file_htm a:focus {
+.file_download li span.file_html a:hover, .file_download li span.file_html a:focus, .file_download li span.file_htm a:hover, .file_download li span.file_htm a:focus, .file_download li span.file_xml a:hover, .file_download li span.file_xml a:focus {
   background: gray;
 }
 

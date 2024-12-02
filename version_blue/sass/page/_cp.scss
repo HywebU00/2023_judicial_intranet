@@ -114,7 +114,7 @@
         }
       }
     }
-    $fileType: doc, docx, odt, xls, xlsx, csv, ods, ppt, pptx, odp, zip, txt, mov, mp3, jpg, wmv, mp4, pdf, other, html, htm;
+    $fileType: doc, docx, odt, xls, xlsx, csv, ods, ppt, pptx, odp, zip, txt, mov, mp3, jpg, wmv, mp4, pdf, other, html, htm, odf, tif, wma, avi, flv, swf, ai, xml, epub, 7z, rar, svg;
     @each $fileType in $fileType {
       span.file_#{$fileType} {
         a {
@@ -122,7 +122,7 @@
           font-weight: bold;
           padding: 0.1em 0.2em;
           border-radius: 3px;
-          font-size: 0.625rem;
+          font-size: 0.688rem;
           width: 30px;
           height: 35px;
           display: flex;
@@ -150,7 +150,8 @@
       align-items: center;
       &.file_doc,
       &.file_docx,
-      &.file_odt {
+      &.file_odt,
+      &.file_odf {
         a {
           background: #275cb7;
           &:hover,
@@ -183,7 +184,8 @@
           }
         }
       }
-      &.file_pdf {
+      &.file_pdf,
+      &.file_epub {
         a {
           background: #c00;
           &:hover,
@@ -192,7 +194,9 @@
           }
         }
       }
-      &.file_zip {
+      &.file_zip,
+      &.file_7z,
+      &.file_rar {
         a {
           background: #eb712e;
           &:hover,
@@ -230,7 +234,10 @@
           }
         }
       }
-      &.file_jpg {
+      &.file_jpg,
+      &.file_tif,
+      &.file_ai,
+      &.file_svg {
         a {
           background: #6c29a4;
           &:hover,
@@ -239,7 +246,11 @@
           }
         }
       }
-      &.file_wmv {
+      &.file_wmv,
+      &.file_wma,
+      &.file_avi,
+      &.file_flv,
+      &.file_swf {
         a {
           background: #430a1f;
           &:hover,
@@ -249,7 +260,8 @@
         }
       }
       &.file_html,
-      &.file_htm {
+      &.file_htm,
+      &.file_xml {
         a {
           background: #999;
           &:hover,
