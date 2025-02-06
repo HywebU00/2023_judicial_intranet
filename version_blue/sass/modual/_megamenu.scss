@@ -27,6 +27,23 @@
   //     position: relative;
   //   }
   // }
+  &.small_style {
+    > ul {
+      > li {
+        flex: 0 1 auto;
+        @include screen('tablet') {
+          flex: 0 1 auto;
+        }
+        > a {
+          padding: 0.6em 0.6em;
+          line-height: 1.2em;
+          &:after {
+            top: 0.7em;
+          }
+        }
+      }
+    }
+  }
   > ul {
     margin: 0;
     padding: 0;
@@ -85,6 +102,7 @@
       }
     }
   }
+
   ul {
     li {
       a {
