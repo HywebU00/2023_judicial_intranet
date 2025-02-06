@@ -4633,7 +4633,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   }
 }
 .megamenu.small_style > ul > li > a {
-  padding: 0.6em 0.6em;
+  padding: 0.6em 0.4em;
   line-height: 1.2em;
 }
 .megamenu.small_style > ul > li > a:after {
