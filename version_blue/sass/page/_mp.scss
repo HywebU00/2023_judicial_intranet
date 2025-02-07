@@ -86,7 +86,7 @@
 // 常用服務
 .serviceblock {
   background-color: #fff;
-  padding: 2em 0 0;
+  padding: 0.5em 0;
   // outline: 1px solid red;
   .container {
     @include gutter(120px);
@@ -312,7 +312,7 @@
 }
 // 最新公告
 .announcementblock {
-  padding: 2em 0 0;
+  padding: 1em 0 0;
   position: relative;
   background-color: #fff;
   min-height: 650px;

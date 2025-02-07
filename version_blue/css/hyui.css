@@ -9325,14 +9325,14 @@ div.function ul li.icon_forward a:before {
   display: block;
   overflow: hidden;
   background: #fff;
-  margin: 2em 0;
+  margin: 1em 0 1.5em;
   text-align: left;
   padding: 0.2em 2em 0;
   position: relative;
   min-height: 1px;
   box-sizing: border-box;
   border-radius: 50px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
 }
 @media (max-width: 991px) {
   .marquee {
@@ -9936,7 +9936,7 @@ body.grayscale {
 
 .serviceblock {
   background-color: #fff;
-  padding: 2em 0 0;
+  padding: 0.5em 0;
 }
 .serviceblock .container {
   position: relative;
@@ -10171,7 +10171,7 @@ body.grayscale {
 }
 
 .announcementblock {
-  padding: 2em 0 0;
+  padding: 1em 0 0;
   position: relative;
   background-color: #fff;
   min-height: 650px;
