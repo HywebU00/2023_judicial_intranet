@@ -86,8 +86,11 @@
 // 常用服務
 .serviceblock {
   background-color: #fff;
-  padding: 0.5em 0;
+  padding: 1.2em 0 0.5em;
   // outline: 1px solid red;
+  @media (max-width: 480px) {
+    padding: 1.2em 0 1.5em;
+  }
   .container {
     @include gutter(120px);
     @include screen('mobile') {
@@ -119,7 +122,7 @@
       }
     }
     .service_slider {
-      padding-bottom: 100px;
+      padding-bottom: 60px;
 
       // 箭頭
       .slick-prev,
@@ -132,21 +135,21 @@
       }
       .slick-prev {
         left: 10px;
-        top: 72%;
+        top: 75%;
       }
       .slick-next {
         left: 77px;
-        top: 72%;
+        top: 75%;
       }
       // 點點
       .slick-dots {
         width: auto;
         right: auto;
         left: 140px;
-        bottom: 45px;
+        bottom: 22px;
         @media (max-width: 480px) {
           left: 10px;
-          bottom: 0px;
+          bottom: -20px;
         }
         li {
           margin: 0 13px;
@@ -312,7 +315,7 @@
 }
 // 最新公告
 .announcementblock {
-  padding: 1em 0 0;
+  padding: 0.5em 0 0;
   position: relative;
   background-color: #fff;
   min-height: 650px;

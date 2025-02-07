@@ -9325,14 +9325,14 @@ div.function ul li.icon_forward a:before {
   display: block;
   overflow: hidden;
   background: #fff;
-  margin: 1em 0 1.5em;
+  margin: 1em 0 1em;
   text-align: left;
   padding: 0.2em 2em 0;
   position: relative;
   min-height: 1px;
   box-sizing: border-box;
   border-radius: 50px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
 }
 @media (max-width: 991px) {
   .marquee {
@@ -9936,7 +9936,12 @@ body.grayscale {
 
 .serviceblock {
   background-color: #fff;
-  padding: 0.5em 0;
+  padding: 1.2em 0 0.5em;
+}
+@media (max-width: 480px) {
+  .serviceblock {
+    padding: 1.2em 0 1.5em;
+  }
 }
 .serviceblock .container {
   position: relative;
@@ -9980,7 +9985,7 @@ body.grayscale {
   }
 }
 .serviceblock .service .service_slider {
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 .serviceblock .service .service_slider .slick-prev,
 .serviceblock .service .service_slider .slick-next {
@@ -9992,22 +9997,22 @@ body.grayscale {
 }
 .serviceblock .service .service_slider .slick-prev {
   left: 10px;
-  top: 72%;
+  top: 75%;
 }
 .serviceblock .service .service_slider .slick-next {
   left: 77px;
-  top: 72%;
+  top: 75%;
 }
 .serviceblock .service .service_slider .slick-dots {
   width: auto;
   right: auto;
   left: 140px;
-  bottom: 45px;
+  bottom: 22px;
 }
 @media (max-width: 480px) {
   .serviceblock .service .service_slider .slick-dots {
     left: 10px;
-    bottom: 0px;
+    bottom: -20px;
   }
 }
 .serviceblock .service .service_slider .slick-dots li {
@@ -10171,7 +10176,7 @@ body.grayscale {
 }
 
 .announcementblock {
-  padding: 1em 0 0;
+  padding: 0.5em 0 0;
   position: relative;
   background-color: #fff;
   min-height: 650px;
