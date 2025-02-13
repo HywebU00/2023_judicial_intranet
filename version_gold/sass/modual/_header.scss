@@ -530,7 +530,7 @@
       overflow: hidden;
       @media (max-width: 1200px) {
         width: 70vw;
-        height: 60vh;
+        height: 70vh;
       }
       @include screen('tablet') {
         width: 80vw;
@@ -576,6 +576,22 @@
 
     // login
     .tabContent {
+      margin-top: 20px;
+      overflow-y: auto;
+      padding: 0 20px;
+      height: calc(60vh - 202px);
+      @media (max-width: 1200px) {
+        height: calc(70vh - 202px);
+      }
+      @include screen('tablet') {
+        height: calc(80vh - 270px);
+      }
+      @include screen('mobile') {
+        height: calc(90vh - 250px);
+      }
+      .flex-form {
+        margin: 0 0 0.5em;
+      }
       .fidologin {
         text-align: center;
         .fidobtn {

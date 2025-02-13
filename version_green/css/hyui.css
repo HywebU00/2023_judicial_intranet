@@ -3649,6 +3649,30 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   display: block;
   margin-top: 10px;
 }
+.header .login_lightbox .tabContent {
+  margin-top: 20px;
+  overflow-y: auto;
+  padding: 0 20px;
+  height: calc(60vh - 202px);
+}
+@media (max-width: 1200px) {
+  .header .login_lightbox .tabContent {
+    height: calc(70vh - 202px);
+  }
+}
+@media screen and (max-width: 991px) {
+  .header .login_lightbox .tabContent {
+    height: calc(80vh - 270px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .header .login_lightbox .tabContent {
+    height: calc(90vh - 250px);
+  }
+}
+.header .login_lightbox .tabContent .flex-form {
+  margin: 0 0 0.5em;
+}
 .header .login_lightbox .tabContent .fidologin {
   text-align: center;
 }
