@@ -2,7 +2,8 @@
 // 文章標題
 
 // .tt{ color: #222; }
-.cp {
+.cp,
+.cp_content {
   .pic {
     float: left;
     margin: 0px 1em 1em 0;
@@ -33,6 +34,9 @@
   }
   table {
     background: #fff;
+    a {
+      display: inline-block;
+    }
   }
   img {
     &.float_left {
@@ -315,7 +319,7 @@
 }
 
 .publish_info {
-  font-size: 0.875em;
+  font-size: 1em;
   line-height: 1.5em;
   list-style: none;
   margin: 0 0 0.7em 0;
@@ -334,6 +338,40 @@
     }
     @include screen('mobile') {
       flex: 1 1 calc(100% / 1);
+    }
+  }
+}
+.cp_content {
+  .web_link {
+    .title {
+      font-size: 1.25em;
+      font-weight: bold;
+      padding: 12px 0px 15px 0px;
+      margin: 0.5em 0px 0.2em;
+      border-bottom: 1px solid $primaryColor;
+      &:after {
+        display: none;
+      }
+    }
+    ol {
+      li {
+        padding: 0.3em 0 0.3em 1.5em;
+        &:before {
+          top: 0.25em;
+        }
+      }
+    }
+  }
+  .file_download {
+    .title {
+      font-size: 1.25em;
+      font-weight: bold;
+      padding: 12px 0px 15px 0px;
+      margin: 0.5em 0px 0.2em;
+      border-bottom: 1px solid $primaryColor;
+      &:after {
+        display: none;
+      }
     }
   }
 }

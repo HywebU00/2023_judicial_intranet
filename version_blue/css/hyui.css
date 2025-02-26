@@ -10937,6 +10937,10 @@ body.grayscale {
 .cp_content table {
   background: #fff;
 }
+.cp table a,
+.cp_content table a {
+  display: inline-block;
+}
 .cp img.float_left,
 .cp_content img.float_left {
   float: left;
