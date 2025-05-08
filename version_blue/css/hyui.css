@@ -9568,18 +9568,18 @@ div.function ul li.icon_forward a:before {
   filter: grayscale(1);
 }
 .marquee {
-  height: 45px;
+  height: 52px;
   display: block;
   overflow: hidden;
   background: #fff;
   margin: 1em 0 1em;
   text-align: left;
-  padding: 0.2em 2em 0;
+  padding: 0.4em 2em 0.6em;
   position: relative;
   min-height: 1px;
   box-sizing: border-box;
   border-radius: 50px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 @media (max-width: 991px) {
   .marquee {
@@ -9593,10 +9593,10 @@ div.function ul li.icon_forward a:before {
 }
 .marquee .slick-prev {
   width: 10px;
-  height: 10px;
+  height: 15px;
   transform: rotate(90deg);
   right: 1px !important;
-  top: 1px !important;
+  top: 5px !important;
   left: auto;
   opacity: 0.5;
   background: url("../vendor/slick/icon_arrow_up_s.png") no-repeat center center;
@@ -10896,6 +10896,110 @@ body.grayscale {
 }
 .pop_up_block .pop_up .content img {
   width: 100%;
+}
+
+.fastbtn_block {
+  width: 80px;
+  position: fixed;
+  top: 215px;
+  right: 0px;
+  z-index: 100;
+  padding: 0 !important;
+  transition: 0.5s;
+}
+@media screen and (max-width: 991px) {
+  .fastbtn_block {
+    display: block;
+    top: 130px;
+    width: 80px;
+    margin-right: -80px;
+    transition: 0.5s;
+  }
+  .fastbtn_block.open {
+    margin-right: 0px;
+  }
+}
+.fastbtn_block .fast_btn {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .fastbtn_block .fast_btn {
+    display: block;
+    position: absolute;
+    left: -36px;
+    top: 0;
+    width: 36px;
+    border-radius: 3px 0 0 3px;
+    text-align: center;
+    height: 110px;
+    z-index: 12;
+    box-shadow: rgba(50, 50, 93, 0.2) -2px 1px 4px -1px, rgba(0, 0, 0, 0.2) -2px 1px 3px -1px;
+  }
+  .fastbtn_block .fast_btn a {
+    color: #fff;
+    display: block;
+    padding: 20px 5px;
+    background-color: #141e53;
+    color: #fff;
+    box-sizing: border-box;
+  }
+}
+.fastbtn_block ul {
+  margin: 0;
+  padding: 20px 0;
+  list-style-type: none;
+  text-align: center;
+  width: 80px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 5px -1px, rgba(0, 0, 0, 0.3) 0px 0px 3px -1px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 3px 0 0 3px;
+  z-index: 10;
+}
+@media screen and (max-width: 991px) {
+  .fastbtn_block ul {
+    border-radius: 0px 0 0 3px;
+  }
+}
+.fastbtn_block ul li {
+  margin-bottom: 5px;
+}
+.fastbtn_block ul li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  font-size: 0.875em;
+  transition: 0.5s;
+}
+.fastbtn_block ul li a span {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  background-color: #141e53;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  transition: 0.5s;
+}
+.fastbtn_block ul li a span img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  margin: auto;
+  transition: 0.5s;
+}
+.fastbtn_block ul li a:hover {
+  color: #141e53;
+  padding: 8px 0;
+}
+.fastbtn_block ul li a:hover span {
+  background-color: #233491;
+  width: 56px;
+  height: 56px;
 }
 
 .cp .pic,

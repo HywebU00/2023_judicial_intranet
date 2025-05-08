@@ -337,6 +337,27 @@ $(function () {
     fade: true,
     cssEase: 'linear',
   });
+
+  // fast_btn 快捷列
+  var fast_btnStatus = false; // 假的判斷式，先設定沒有開啟
+  $('.fast_btn').click(function () {
+    $('.fastbtn_block').toggleClass('open');
+  });
+  $('.fast_btn').focusout(function () {
+    $('.fastbtn_block').toggleClass('open');
+  });
+  $('.fastbtn_block ul')
+    .find('li:last>a')
+    .focusout(function () {
+      $('.fastbtn_block').removeClass('open');
+    });
+  if ((fast_btnStatus = true)) {
+    $('body').keydown(function (e) {
+      if (e.keyCode == 27) {
+        $('.fastbtn_block').removeClass('open');
+      }
+    });
+  }
 });
 // 彈出訊息
 $(function () {
