@@ -208,7 +208,7 @@ $(function () {
       infinite: true,
       vertical: true,
       verticalSwiping: true,
-      speed: 4000,
+      speed: 3000,
       autoplaySpeed: 0,
       cssEase: 'linear',
       slidesToShow: 1,
@@ -217,6 +217,17 @@ $(function () {
       pauseOnHover: true, //滑鼠移過後暫停自動撥放
       focusOnSelect: true,
     });
+    // 滑鼠移出後：恢復 autoplay
+    $('.marquee_num1 ul').on('mouseleave', function () {
+      $('.marquee_num1 ul').slick('slickPlay');
+      $(this).slick('slickNext'); // 馬上滑動一次
+      // 移除箭頭 focus 狀態
+      $('.marquee_num1 .slick-prev, .marquee_num1 .slick-next').blur();
+    });
+    $('.marquee_num1 .slick-prev').on('click', function () {
+      $(this).slick('slickPlay');
+      $(this).slick('slickPrev');
+    });
   }
   if ($('.marquee_num2').length > 0) {
     $('.marquee_num2 ul').slick({
@@ -224,7 +235,7 @@ $(function () {
       infinite: true,
       vertical: true,
       verticalSwiping: true,
-      speed: 4000,
+      speed: 3000,
       autoplaySpeed: 0,
       cssEase: 'linear',
       slidesToShow: 2,
@@ -233,14 +244,26 @@ $(function () {
       pauseOnHover: true, //滑鼠移過後暫停自動撥放
       focusOnSelect: true,
     });
+    // 滑鼠移出後：恢復 autoplay
+    $('.marquee_num2 ul').on('mouseleave', function () {
+      $('.marquee_num2 ul').slick('slickPlay');
+      $(this).slick('slickNext'); // 馬上滑動一次
+      // 移除箭頭 focus 狀態
+      $('.marquee_num2 .slick-prev, .marquee_num2 .slick-next').blur();
+    });
+    $('.marquee_num2 .slick-prev').on('click', function () {
+      $(this).slick('slickPlay');
+      $(this).slick('slickPrev');
+    });
   }
+
   if ($('.marquee_num3').length > 0) {
     $('.marquee_num3 ul').slick({
       dots: false,
       infinite: true,
       vertical: true,
       verticalSwiping: true,
-      speed: 4000,
+      speed: 3000,
       autoplaySpeed: 0,
       cssEase: 'linear',
       slidesToShow: 3,
@@ -249,6 +272,17 @@ $(function () {
       pauseOnHover: true, //滑鼠移過後暫停自動撥放
       focusOnSelect: true,
     });
+    // 滑鼠移出後：恢復 autoplay
+    $('.marquee_num3 ul').on('mouseleave', function () {
+      $('.marquee_num3 ul').slick('slickPlay');
+      $(this).slick('slickNext'); // 馬上滑動一次
+      // 移除箭頭 focus 狀態
+      $('.marquee_num3 .slick-prev, .marquee_num3 .slick-next').blur();
+    });
+    $('.marquee_num3 .slick-prev').on('click', function () {
+      $(this).slick('slickPlay');
+      $(this).slick('slickPrev');
+    });
   }
   if ($('.marquee_num4').length > 0) {
     $('.marquee_num4 ul').slick({
@@ -256,7 +290,7 @@ $(function () {
       infinite: true,
       vertical: true,
       verticalSwiping: true,
-      speed: 4000,
+      speed: 3000,
       autoplaySpeed: 0,
       cssEase: 'linear',
       slidesToShow: 4,
@@ -265,6 +299,17 @@ $(function () {
       pauseOnHover: true, //滑鼠移過後暫停自動撥放
       focusOnSelect: true,
     });
+    // 滑鼠移出後：恢復 autoplay
+    $('.marquee_num4 ul').on('mouseleave', function () {
+      $('.marquee_num4 ul').slick('slickPlay');
+      $(this).slick('slickNext'); // 馬上滑動一次
+      // 移除箭頭 focus 狀態
+      $('.marquee_num4 .slick-prev, .marquee_num4 .slick-next').blur();
+    });
+    $('.marquee_num4 .slick-prev').on('click', function () {
+      $(this).slick('slickPlay');
+      $(this).slick('slickPrev');
+    });
   }
   if ($('.marquee_num5').length > 0) {
     $('.marquee_num5 ul').slick({
@@ -272,7 +317,7 @@ $(function () {
       infinite: true,
       vertical: true,
       verticalSwiping: true,
-      speed: 4000,
+      speed: 3000,
       autoplaySpeed: 0,
       cssEase: 'linear',
       slidesToShow: 5,
@@ -280,6 +325,17 @@ $(function () {
       autoplay: true,
       pauseOnHover: true, //滑鼠移過後暫停自動撥放
       focusOnSelect: true,
+    });
+    // 滑鼠移出後：恢復 autoplay
+    $('.marquee_num5 ul').on('mouseleave', function () {
+      $('.marquee_num5 ul').slick('slickPlay');
+      $(this).slick('slickNext'); // 馬上滑動一次
+      // 移除箭頭 focus 狀態
+      $('.marquee_num5 .slick-prev, .marquee_num5 .slick-next').blur();
+    });
+    $('.marquee_num5 .slick-prev').on('click', function () {
+      $(this).slick('slickPlay');
+      $(this).slick('slickPrev');
     });
   }
   //常用服務
