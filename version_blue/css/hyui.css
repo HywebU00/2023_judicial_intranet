@@ -9577,7 +9577,7 @@ div.function ul li.icon_forward a:before {
   position: relative;
   min-height: 1px;
   box-sizing: border-box;
-  border-radius: 50px;
+  border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 @media (max-width: 991px) {
@@ -9594,8 +9594,8 @@ div.function ul li.icon_forward a:before {
   width: 10px;
   height: 15px;
   transform: rotate(90deg);
-  right: 1px !important;
-  top: 5px !important;
+  right: 1px;
+  top: 9%;
   left: auto;
   opacity: 0.5;
   background: url("../vendor/slick/icon_arrow_up_s.png") no-repeat center center;
@@ -9615,8 +9615,8 @@ div.function ul li.icon_forward a:before {
   width: 10px;
   height: 10px;
   transform: rotate(-90deg);
-  right: 0px !important;
-  top: 19px !important;
+  right: 0px;
+  top: 53%;
   left: auto;
   opacity: 0.5;
   width: 20px !important;
@@ -9637,14 +9637,34 @@ div.function ul li.icon_forward a:before {
   margin: 0;
 }
 .marquee a {
-  display: block;
-  line-height: 40px;
-  margin-right: 3em;
+  color: #444;
+  text-decoration: none;
+  font-size: 1.125rem;
+  display: flex;
+  padding: 0.3em 0 0 1em;
+  align-items: center;
+  line-height: 25px;
+  margin-right: 2em;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+.marquee a:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #141e53;
+  position: absolute;
+  left: 0;
+  top: 0.7m;
+}
+.marquee a div {
+  width: 100%;
   font-weight: bold;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #000;
   text-decoration: none;
   font-size: 1.125rem;
 }
@@ -9655,6 +9675,46 @@ div.function ul li.icon_forward a:before {
 }
 .marquee a:hover {
   color: #1c2787;
+}
+.marquee.marquee_num2 {
+  height: 90px;
+  padding: 0.7em 2em 0;
+}
+.marquee.marquee_num2 .slick-prev {
+  top: 20%;
+}
+.marquee.marquee_num2 .slick-next {
+  top: 50%;
+}
+.marquee.marquee_num3 {
+  height: 130px;
+  padding: 0.7em 2em 0;
+}
+.marquee.marquee_num3 .slick-prev {
+  top: 30%;
+}
+.marquee.marquee_num3 .slick-next {
+  top: 60%;
+}
+.marquee.marquee_num4 {
+  height: 160px;
+  padding: 0.7em 2em 0;
+}
+.marquee.marquee_num4 .slick-prev {
+  top: 30%;
+}
+.marquee.marquee_num4 .slick-next {
+  top: 60%;
+}
+.marquee.marquee_num5 {
+  height: 190px;
+  padding: 0.7em 2em 0;
+}
+.marquee.marquee_num5 .slick-prev {
+  top: 30%;
+}
+.marquee.marquee_num5 .slick-next {
+  top: 60%;
 }
 
 .pagination {

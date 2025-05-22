@@ -202,14 +202,14 @@ $(function () {
       });
   });
   // 跑馬燈
-  if ($('.marquee').length > 0) {
-    $('.marquee ul').slick({
+  if ($('.marquee_num1').length > 0) {
+    $('.marquee_num1 ul').slick({
       dots: false,
       infinite: true,
       vertical: true,
       verticalSwiping: true,
-      speed: 300,
-      autoplaySpeed: 5000,
+      speed: 1000,
+      autoplaySpeed: 3000,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
@@ -217,7 +217,66 @@ $(function () {
       focusOnSelect: true,
     });
   }
-
+  if ($('.marquee_num2').length > 0) {
+    $('.marquee_num2 ul').slick({
+      dots: false,
+      infinite: true,
+      vertical: true,
+      verticalSwiping: true,
+      speed: 1000,
+      autoplaySpeed: 3000,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      pauseOnHover: true, //滑鼠移過後暫停自動撥放
+      focusOnSelect: true,
+    });
+  }
+  if ($('.marquee_num3').length > 0) {
+    $('.marquee_num3 ul').slick({
+      dots: false,
+      infinite: true,
+      vertical: true,
+      verticalSwiping: true,
+      speed: 1000,
+      autoplaySpeed: 3000,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      pauseOnHover: true, //滑鼠移過後暫停自動撥放
+      focusOnSelect: true,
+    });
+  }
+  if ($('.marquee_num4').length > 0) {
+    $('.marquee_num4 ul').slick({
+      dots: false,
+      infinite: true,
+      vertical: true,
+      verticalSwiping: true,
+      speed: 1000,
+      autoplaySpeed: 3000,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      pauseOnHover: true, //滑鼠移過後暫停自動撥放
+      focusOnSelect: true,
+    });
+  }
+  if ($('.marquee_num5').length > 0) {
+    $('.marquee_num5 ul').slick({
+      dots: false,
+      infinite: true,
+      vertical: true,
+      verticalSwiping: true,
+      speed: 1000,
+      autoplaySpeed: 3000,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      pauseOnHover: true, //滑鼠移過後暫停自動撥放
+      focusOnSelect: true,
+    });
+  }
   //常用服務
   $('.service_slider').slick({
     arrows: true,
