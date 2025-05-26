@@ -9577,7 +9577,7 @@ div.function ul li.icon_forward a:before {
   position: relative;
   min-height: 1px;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 50px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 @media (max-width: 991px) {
@@ -9594,8 +9594,8 @@ div.function ul li.icon_forward a:before {
   width: 10px;
   height: 15px;
   transform: rotate(90deg);
-  right: 1px;
-  top: 9%;
+  right: 1px !important;
+  top: 5px !important;
   left: auto;
   opacity: 0.5;
   background: url("../vendor/slick/icon_arrow_up_s.png") no-repeat center center;
@@ -9615,8 +9615,8 @@ div.function ul li.icon_forward a:before {
   width: 10px;
   height: 10px;
   transform: rotate(-90deg);
-  right: 0px;
-  top: 53%;
+  right: 0px !important;
+  top: 19px !important;
   left: auto;
   opacity: 0.5;
   width: 20px !important;
@@ -9632,11 +9632,99 @@ div.function ul li.icon_forward a:before {
   width: 10px !important;
   height: 10px !important;
 }
-.marquee > div {
+.marquee a {
+  text-decoration: none;
+  font-size: 1.125rem;
+  display: block;
+  line-height: 40px;
+  margin-right: 3em;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #000;
+  height: 50px;
+}
+.marquee a span {
+  color: #3695b7;
+  margin-right: 15px;
+  display: none;
+}
+.marquee a:hover {
+  color: #1c2787;
+}
+
+.marquee2 {
+  height: 52px;
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  margin: 1em 0 1em;
+  text-align: left;
+  padding: 0.4em 2em 0.6em;
+  position: relative;
+  min-height: 1px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+@media (max-width: 991px) {
+  .marquee2 {
+    margin: 1.5em 0em;
+  }
+}
+.marquee2 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.marquee2 .slick-prev {
+  width: 10px;
+  height: 15px;
+  transform: rotate(90deg);
+  right: 1px;
+  top: 9%;
+  left: auto;
+  opacity: 0.5;
+  background: url("../vendor/slick/icon_arrow_up_s.png") no-repeat center center;
+  background-size: 16px;
+  width: 20px !important;
+  height: 20px !important;
+  box-shadow: none;
+}
+.marquee2 .slick-prev:hover, .marquee2 .slick-prev:focus {
+  opacity: 1;
+}
+.marquee2 .slick-prev:before {
+  width: 10px !important;
+  height: 10px !important;
+}
+.marquee2 .slick-next {
+  width: 10px;
+  height: 10px;
+  transform: rotate(-90deg);
+  right: 0px;
+  top: 53%;
+  left: auto;
+  opacity: 0.5;
+  width: 20px !important;
+  height: 20px !important;
+  background: url("../vendor/slick/icon_arrow_up_s.png") no-repeat center center;
+  background-size: 16px;
+  box-shadow: none;
+}
+.marquee2 .slick-next:hover, .marquee2 .slick-next:focus {
+  opacity: 1;
+}
+.marquee2 .slick-next:before {
+  width: 10px !important;
+  height: 10px !important;
+}
+.marquee2 > div {
   padding: 0;
   margin: 0;
 }
-.marquee a {
+.marquee2 a {
   color: #444;
   text-decoration: none;
   font-size: 1.125rem;
@@ -9649,7 +9737,7 @@ div.function ul li.icon_forward a:before {
   text-decoration: none;
   position: relative;
 }
-.marquee a:before {
+.marquee2 a:before {
   content: "";
   width: 6px;
   height: 6px;
@@ -9659,7 +9747,7 @@ div.function ul li.icon_forward a:before {
   left: 0;
   top: 0.7m;
 }
-.marquee a div {
+.marquee2 a div {
   width: 100%;
   font-weight: bold;
   overflow: hidden;
@@ -9668,52 +9756,52 @@ div.function ul li.icon_forward a:before {
   text-decoration: none;
   font-size: 1.125rem;
 }
-.marquee a span {
+.marquee2 a span {
   color: #3695b7;
   margin-right: 15px;
   display: none;
 }
-.marquee a:hover {
+.marquee2 a:hover {
   color: #1c2787;
 }
-.marquee.marquee_num2 {
+.marquee2.marquee_num2 {
   height: 90px;
   padding: 0.7em 2em 0;
 }
-.marquee.marquee_num2 .slick-prev {
+.marquee2.marquee_num2 .slick-prev {
   top: 20%;
 }
-.marquee.marquee_num2 .slick-next {
+.marquee2.marquee_num2 .slick-next {
   top: 50%;
 }
-.marquee.marquee_num3 {
+.marquee2.marquee_num3 {
   height: 130px;
   padding: 0.7em 2em 0;
 }
-.marquee.marquee_num3 .slick-prev {
+.marquee2.marquee_num3 .slick-prev {
   top: 30%;
 }
-.marquee.marquee_num3 .slick-next {
+.marquee2.marquee_num3 .slick-next {
   top: 60%;
 }
-.marquee.marquee_num4 {
+.marquee2.marquee_num4 {
   height: 160px;
   padding: 0.7em 2em 0;
 }
-.marquee.marquee_num4 .slick-prev {
+.marquee2.marquee_num4 .slick-prev {
   top: 30%;
 }
-.marquee.marquee_num4 .slick-next {
+.marquee2.marquee_num4 .slick-next {
   top: 60%;
 }
-.marquee.marquee_num5 {
+.marquee2.marquee_num5 {
   height: 190px;
   padding: 0.7em 2em 0;
 }
-.marquee.marquee_num5 .slick-prev {
+.marquee2.marquee_num5 .slick-prev {
   top: 30%;
 }
-.marquee.marquee_num5 .slick-next {
+.marquee2.marquee_num5 .slick-next {
   top: 60%;
 }
 
