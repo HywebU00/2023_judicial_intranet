@@ -221,3 +221,132 @@
   line-height: 1.7em;
   margin-bottom: 1em;
 }
+// 數位圖書館
+.digitalLibrary_block {
+  .digitalLibrary_group {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 4em 6em;
+    margin-bottom: 40px;
+    transition: 0.5s;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      li {
+        flex: 0 0 auto;
+        flex-basis: 48%;
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        font-size: 1.25rem;
+        border-bottom: 1px dotted #ddd;
+
+        &:before {
+          content: '';
+          width: 5px;
+          height: 5px;
+          border: 2px solid #707070;
+          border-color: #707070 #707070 transparent transparent;
+          transform: rotate(45deg);
+          position: absolute;
+          top: 10px;
+          left: 0px;
+        }
+
+        a {
+          // display: inline-block;
+          padding: 0;
+          position: relative;
+          line-height: 1.5em;
+          color: $color-dark;
+          transition: 0.3s;
+          // outline: 1px solid red;
+          img {
+            vertical-align: top;
+            margin-top: 2px;
+          }
+
+          &.externalLinks {
+            background-image: url('../images/external_links.png');
+            background-position: right 5px top 5px;
+            background-repeat: no-repeat;
+            background-size: 18px;
+            padding: 0 35px 0 0;
+          }
+
+          &.infoLink {
+            img {
+              background-color: #fff;
+              border-radius: 50%;
+              border: 2px solid #ff5500;
+              width: 22px;
+              height: 22px;
+              transition: 0.3s;
+              margin-top: 2px;
+            }
+          }
+          &:has(+ a) {
+            margin-right: 10px;
+          }
+
+          &:hover {
+            color: #0295bb;
+            text-decoration: underline;
+            &.externalLinks {
+              padding: 0 30px 0 0;
+            }
+            &.infoLink {
+              img {
+                box-shadow: 0 0 0 3px lighten($color: #ff5500, $amount: 30);
+              }
+            }
+          }
+        }
+        span {
+          display: block;
+          color: #666;
+          padding: 8px 0;
+          font-size: 1.188rem;
+          a {
+            color: #666;
+            padding: 0;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            &:hover {
+              text-decoration: underline;
+            }
+            &:has(+ a) {
+              margin: 0 2px;
+            }
+          }
+          a.infoLink {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    @include screen('tablet') {
+      padding: 3em;
+    }
+    @media (max-width: 900px) {
+      ul {
+        display: block;
+        li {
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    @include screen('xs_mobile') {
+      padding: 2em;
+    }
+  }
+}
