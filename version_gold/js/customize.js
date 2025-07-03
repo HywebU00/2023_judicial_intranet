@@ -327,3 +327,66 @@ $(function () {
     });
   }
 });
+// 快捷鍵
+$(function () {
+  const aBlock = $('.fastbtn_block');
+  $(window).on('scroll resize', function () {
+    const scrollTop = $(window).scrollTop();
+    const winWidth = $(window).width();
+
+    if (winWidth < 992) {
+      // ✅ 小螢幕邏輯
+      if (scrollTop > 300) {
+        aBlock.css('top', '70px'); // 小螢幕滑到 300px 以上
+      } else {
+        aBlock.css('top', '260px'); // ✅ 小螢幕滑回上面（小於 300px）
+      }
+    } else {
+      // ✅ 大螢幕邏輯
+      if (scrollTop > 300) {
+        aBlock.css('top', '80px'); // 大螢幕滑到 300px 以上
+      } else {
+        aBlock.css('top', '210px'); // 大螢幕滑回上面（小於 300px）
+      }
+    }
+  });
+
+  // 頁面載入時也執行一次
+  $(window).trigger('scroll');
+});
+
+// 快捷鍵
+$(function () {
+  const aBlock = $('.fastbtn_block');
+
+  $(window).on('scroll resize', function () {
+    const scrollTop = $(window).scrollTop();
+    const winWidth = $(window).width();
+
+    if (winWidth < 480) {
+      // ✅ 超小螢幕（手機）
+      if (scrollTop > 300) {
+        aBlock.css('top', '70px'); // 超小螢幕往下滑 >300
+      } else {
+        aBlock.css('top', '180px'); // 超小螢幕往上滑 <=300
+      }
+    } else if (winWidth < 992) {
+      // ✅ 小螢幕（平板）
+      if (scrollTop > 300) {
+        aBlock.css('top', '110px');
+      } else {
+        aBlock.css('top', '250px');
+      }
+    } else {
+      // ✅ 大螢幕
+      if (scrollTop > 300) {
+        aBlock.css('top', '80px');
+      } else {
+        aBlock.css('top', '215px');
+      }
+    }
+  });
+
+  // 初始化觸發一次
+  $(window).trigger('scroll');
+});

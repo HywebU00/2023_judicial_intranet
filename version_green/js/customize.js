@@ -384,3 +384,30 @@ $(function () {
     });
   }
 });
+// 快捷鍵
+$(function () {
+  const aBlock = $('.fastbtn_block');
+  $(window).on('scroll resize', function () {
+    const scrollTop = $(window).scrollTop();
+    const winWidth = $(window).width();
+
+    if (winWidth < 992) {
+      // ✅ 小螢幕邏輯
+      if (scrollTop > 300) {
+        aBlock.css('top', '70px'); // 小螢幕滑到 300px 以上
+      } else {
+        aBlock.css('top', '200px'); // ✅ 小螢幕滑回上面（小於 300px）
+      }
+    } else {
+      // ✅ 大螢幕邏輯
+      if (scrollTop > 300) {
+        aBlock.css('top', '50px'); // 大螢幕滑到 300px 以上
+      } else {
+        aBlock.css('top', '250px'); // 大螢幕滑回上面（小於 300px）
+      }
+    }
+  });
+
+  // 頁面載入時也執行一次
+  $(window).trigger('scroll');
+});
