@@ -11066,7 +11066,7 @@ body.grayscale {
 }
 
 .fastbtn_block {
-  width: 80px;
+  width: 90px;
   position: fixed;
   top: 215px;
   right: 0px;
@@ -11078,8 +11078,8 @@ body.grayscale {
   .fastbtn_block {
     display: block;
     top: 130px;
-    width: 80px;
-    margin-right: -80px;
+    width: 90px;
+    margin-right: -90px;
     transition: 0.5s;
   }
   .fastbtn_block.open {
@@ -11116,7 +11116,7 @@ body.grayscale {
   padding: 20px 0;
   list-style-type: none;
   text-align: center;
-  width: 80px;
+  width: 90px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 5px -1px, rgba(0, 0, 0, 0.3) 0px 0px 3px -1px;
   background-color: #fff;
   position: relative;
@@ -11135,13 +11135,13 @@ body.grayscale {
   display: block;
   color: #333;
   text-align: center;
-  font-size: 0.875em;
+  font-size: 1.125em;
   transition: 0.5s;
 }
 .fastbtn_block ul li a span {
   width: 56px;
   height: 56px;
-  margin: 0 auto;
+  margin: 0 auto 2px;
   background-color: #141e53;
   border-radius: 50%;
   display: block;

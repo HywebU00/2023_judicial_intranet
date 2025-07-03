@@ -623,7 +623,7 @@
 }
 // fastlink 快捷列
 .fastbtn_block {
-  width: 80px;
+  width: 90px;
   position: fixed;
   top: 250px;
   right: 0px;
@@ -633,8 +633,8 @@
   @include screen('tablet') {
     display: block;
     top: 250px;
-    width: 80px;
-    margin-right: -80px;
+    width: 90px;
+    margin-right: -90px;
     transition: 0.5s;
     &.open {
       margin-right: 0px;
@@ -672,7 +672,7 @@
     padding: 20px 0;
     list-style-type: none;
     text-align: center;
-    width: 80px;
+    width: 90px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 5px -1px, rgba(0, 0, 0, 0.3) 0px 0px 3px -1px;
     background-color: #fff;
     position: relative;
@@ -687,12 +687,12 @@
         display: block;
         color: #333;
         text-align: center;
-        font-size: 0.875em;
+        font-size: 1.125em;
         transition: 0.5s;
         span {
           width: 56px;
           height: 56px;
-          margin: 0 auto;
+          margin: 0 auto 3px;
           background-color: $primaryColor;
           border-radius: 50%;
           display: block;

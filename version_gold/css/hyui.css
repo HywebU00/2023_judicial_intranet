@@ -10873,7 +10873,7 @@ body.grayscale {
 .fastbtn_block ul li a span {
   width: 56px;
   height: 56px;
-  margin: 0 auto;
+  margin: 0 auto 2px;
   background-color: #896936;
   border-radius: 50%;
   display: block;
