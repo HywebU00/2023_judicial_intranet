@@ -3156,7 +3156,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   right: 10px;
   transition: 0.3s ease-out;
   display: none;
-  z-index: 99;
+  z-index: 99999;
   text-indent: -999999px;
 }
 .scrollToTop:hover, .scrollToTop:focus {
