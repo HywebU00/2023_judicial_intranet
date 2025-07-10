@@ -3538,7 +3538,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
     border: 1px solid transparent;
     box-shadow: none;
   }
-  .header .member_login_btn button.btn:hover {
+  .header .member_login_btn button.btn:hover, .header .member_login_btn button.btn:focus {
     background-image: url("../images/icon_member_white.svg");
   }
 }

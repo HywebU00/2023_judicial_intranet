@@ -422,7 +422,8 @@
         background-color: transparent;
         border: 1px solid transparent;
         box-shadow: none;
-        &:hover {
+        &:hover,
+        &:focus {
           background-image: url('../images/icon_member_white.svg');
         }
       }

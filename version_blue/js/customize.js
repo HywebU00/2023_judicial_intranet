@@ -494,7 +494,7 @@ $(function () {
     $('.fastbtn_block').toggleClass('open');
   });
   $('.fast_btn').focusout(function () {
-    $('.fastbtn_block').toggleClass('open');
+    $('.fastbtn_block').removeClass('open');
   });
   $('.fastbtn_block ul')
     .find('li:last>a')
